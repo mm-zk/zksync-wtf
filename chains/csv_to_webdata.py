@@ -27,19 +27,14 @@ import json
 import re
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
+from datetime import datetime, timezone
 
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="CSV → zksync-wtf JSON converter")
     p.add_argument("csv", type=Path, help="Input CSV file")
     p.add_argument("--out", type=Path, default=Path("zksync_wtf_data_from_csv.json"), help="Output JSON path")
-    p.add_argument("--status-col", default="Status", help="Status column name")
-    p.add_argument("--live-value", default="Live", help="Row value that means 'live'")
-    p.add_argument(
-        "--name-cols",
-        default="Name,Chain Name,Chain,Network,Title",
-        help="Comma-separated candidate columns for a nice display name",
-    )
+    
     return p.parse_args()
 
 
@@ -83,25 +78,27 @@ def main() -> None:
         header_map: Dict[str, str] = {normalize_header(h): h for h in reader.fieldnames or []}
 
     # Resolve key columns (case-insensitive with common aliases)
-    status_col = find_column(header_map, [args.status_col]) or args.status_col
+    status_col = find_column(header_map, ["Status"]) or "Status"
 
-    chain_id_col = find_column(header_map, [
-        "chain_id", "chain id", "chainid", "id"
-    ])
+    chain_id_col = find_column(header_map, ["Chain Id"])
 
-    name_col = find_column(header_map, [c.strip() for c in args.name_cols.split(",")])
+    name_col = find_column(header_map, ["Chain Name"])
 
-    columns_to_extract: List[Tuple[str, List[str]]] = [
-        ("MLExplorer", ["mlexplorer", "ml explorer", "matterlabs explorer", "ml explorer url"]),
-        ("AltExplorer", ["altexplorer", "alt explorer", "alternative explorer", "alt explorer url"]),
-        ("Portal", ["portal", "website", "homepage", "docs", "portal url"]),
-        ("HTTPS RPC", ["https rpc", "rpc", "http rpc", "https rpc url", "endpoint"]),
+    columns_to_extract: List[str] = [
+        "ML Explorer",
+        "Alt Explorer",
+        "Portal",
+        "HTTPS RPC",
+        "L1 Blob Operator (Commits batches)",
+        "L1 Operator (Prove and Execute batches)",
+        "L2 Operator (collects fees)",
+        "ChainAdmin Owner"
     ]
 
     # Map found normalized header → display label + original header name
     found_cols: List[Tuple[str, str]] = []  # (label, original_header)
-    for label, aliases in columns_to_extract:
-        col = find_column(header_map, aliases + [label])
+    for label in columns_to_extract:
+        col = find_column(header_map,[label])
         if col:
             found_cols.append((label, col))
 
@@ -111,7 +108,7 @@ def main() -> None:
     out: List[Dict[str, str]] = []
     dedupe: set = set()
 
-    live_value_norm = normalize_header(args.live_value)
+    live_value_norm = normalize_header("Live")
     status_missing_warned = False
 
     for row in rows:
@@ -122,8 +119,9 @@ def main() -> None:
                 continue
         else:
             if not status_missing_warned:
-                print(f"[warn] Status column '{status_col}' not found; keeping all rows")
+                print(f"[warn] Status column '{status_col}' not found;")
                 status_missing_warned = True
+                continue
 
         # Optional nice name
         chain_name = None
@@ -131,6 +129,8 @@ def main() -> None:
             chain_name = next((row[k] for k in row if normalize_header(k) == normalize_header(name_col)), None)
             if chain_name:
                 chain_name = chain_name.strip() or None
+        if not chain_name:
+            continue  # Skip if no chain name
 
         # chain_id entry
         if chain_id_col and key_exists(row, chain_id_col):
@@ -142,7 +142,7 @@ def main() -> None:
                 url = f"https://chainlist.org/chain/{cid}"
                 desc = f"Chain ID {cid}" + (f" — {chain_name}" if chain_name else "")
                 entry = {
-                    "key": "chain_id",
+                    "key": f"chain_id for {chain_name}",
                     "value": cid,
                     "description": desc,
                     "url": url,
@@ -163,7 +163,7 @@ def main() -> None:
                 # If missing scheme, don't force add; keep as-is for display and link.
                 desc = f"{label} for chain" + (f" {chain_name}" if chain_name else "")
                 entry = {
-                    "key": label,
+                    "key": f"{label} for {chain_name}",
                     "value": u,
                     "description": desc,
                     "url": u,
@@ -177,7 +177,12 @@ def main() -> None:
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=2)
+        timestamp = datetime.now(timezone.utc).isoformat(timespec="microseconds").replace("+00:00", "Z")
+        json.dump({
+            "source": "csv",
+            "fetched_at": timestamp,
+            "items": {r["key"]: r for r in out}
+        }, f, ensure_ascii=False, indent=2)
 
     print(f"[ok] Wrote {args.out} — {len(out)} records")
 

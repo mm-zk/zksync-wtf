@@ -300,6 +300,1476 @@
     "url": "https://github.com/matter-labs/zksync-era/blob/main/prover/data/historical_data/23/commitments.json"
   },
   {
+    "key": "Alt Explorer for Abstract Mainnet",
+    "value": "https://abscan.org/",
+    "description": "Alt Explorer for chain Abstract Mainnet",
+    "url": "https://abscan.org/"
+  },
+  {
+    "key": "Alt Explorer for Abstract Testnet",
+    "value": "https://sepolia.abscan.org/",
+    "description": "Alt Explorer for chain Abstract Testnet",
+    "url": "https://sepolia.abscan.org/"
+  },
+  {
+    "key": "Alt Explorer for Altava Testnet",
+    "value": "https://explorer.testnet.prometheuz.io/",
+    "description": "Alt Explorer for chain Altava Testnet",
+    "url": "https://explorer.testnet.prometheuz.io/"
+  },
+  {
+    "key": "Alt Explorer for Creator (Zepeto) Testnet",
+    "value": "https://creator-testnet.explorer.caldera.xyz",
+    "description": "Alt Explorer for chain Creator (Zepeto) Testnet",
+    "url": "https://creator-testnet.explorer.caldera.xyz"
+  },
+  {
+    "key": "Alt Explorer for Cronos Mainnet",
+    "value": "https://explorer.zkevm.cronos.org/",
+    "description": "Alt Explorer for chain Cronos Mainnet",
+    "url": "https://explorer.zkevm.cronos.org/"
+  },
+  {
+    "key": "Alt Explorer for Cronos Testnet",
+    "value": "https://explorer.zkevm.cronos.org/testnet",
+    "description": "Alt Explorer for chain Cronos Testnet",
+    "url": "https://explorer.zkevm.cronos.org/testnet"
+  },
+  {
+    "key": "Alt Explorer for GenLayer Testnet",
+    "value": "https://genlayer-testnet.explorer.caldera.xyz",
+    "description": "Alt Explorer for chain GenLayer Testnet",
+    "url": "https://genlayer-testnet.explorer.caldera.xyz"
+  },
+  {
+    "key": "Alt Explorer for Lens Mainnet",
+    "value": "https://lenscan.io",
+    "description": "Alt Explorer for chain Lens Mainnet",
+    "url": "https://lenscan.io"
+  },
+  {
+    "key": "Alt Explorer for Lens Testnet",
+    "value": "https://testnet.lenscan.io",
+    "description": "Alt Explorer for chain Lens Testnet",
+    "url": "https://testnet.lenscan.io"
+  },
+  {
+    "key": "Alt Explorer for OpenZK Mainnet",
+    "value": "https://openzk.calderaexplorer.xyz/",
+    "description": "Alt Explorer for chain OpenZK Mainnet",
+    "url": "https://openzk.calderaexplorer.xyz/"
+  },
+  {
+    "key": "Alt Explorer for OpenZK Testnet",
+    "value": "https://openzk-testnet.explorer.caldera.xyz/",
+    "description": "Alt Explorer for chain OpenZK Testnet",
+    "url": "https://openzk-testnet.explorer.caldera.xyz/"
+  },
+  {
+    "key": "Alt Explorer for Sophon Mainnet",
+    "value": "https://sophscan.xyz/",
+    "description": "Alt Explorer for chain Sophon Mainnet",
+    "url": "https://sophscan.xyz/"
+  },
+  {
+    "key": "Alt Explorer for Sophon Testnet",
+    "value": "https://testnet.sophscan.xyz/",
+    "description": "Alt Explorer for chain Sophon Testnet",
+    "url": "https://testnet.sophscan.xyz/"
+  },
+  {
+    "key": "Alt Explorer for Space and Time Mainnet",
+    "value": "https://spaceandtime.calderaexplorer.xyz",
+    "description": "Alt Explorer for chain Space and Time Mainnet",
+    "url": "https://spaceandtime.calderaexplorer.xyz"
+  },
+  {
+    "key": "Alt Explorer for Space and Time Testnet",
+    "value": "https://sxt-testnet-avail.explorer.caldera.xyz/",
+    "description": "Alt Explorer for chain Space and Time Testnet",
+    "url": "https://sxt-testnet-avail.explorer.caldera.xyz/"
+  },
+  {
+    "key": "Alt Explorer for XPLA Mainnet",
+    "value": "https://xpla.calderaexplorer.xyz",
+    "description": "Alt Explorer for chain XPLA Mainnet",
+    "url": "https://xpla.calderaexplorer.xyz"
+  },
+  {
+    "key": "Alt Explorer for XPLA Testnet",
+    "value": "https://xpla-testnet.explorer.caldera.xyz/",
+    "description": "Alt Explorer for chain XPLA Testnet",
+    "url": "https://xpla-testnet.explorer.caldera.xyz/"
+  },
+  {
+    "key": "Alt Explorer for ZaynZK Testnet",
+    "value": "https://zaynzk-testnet.explorer.caldera.xyz/",
+    "description": "Alt Explorer for chain ZaynZK Testnet",
+    "url": "https://zaynzk-testnet.explorer.caldera.xyz/"
+  },
+  {
+    "key": "Alt Explorer for Zero Mainnet",
+    "value": "https://explorer.zero.network/",
+    "description": "Alt Explorer for chain Zero Mainnet",
+    "url": "https://explorer.zero.network/"
+  },
+  {
+    "key": "Alt Explorer for Zero Testnet",
+    "value": "https://zerion-testnet-proofs.explorer.caldera.xyz",
+    "description": "Alt Explorer for chain Zero Testnet",
+    "url": "https://zerion-testnet-proofs.explorer.caldera.xyz"
+  },
+  {
+    "key": "Alt Explorer for ZKsync Era Mainnet",
+    "value": "https://era.zksync.network/",
+    "description": "Alt Explorer for chain ZKsync Era Mainnet",
+    "url": "https://era.zksync.network/"
+  },
+  {
+    "key": "Alt Explorer for ZKsync Era Sepolia Testnet (Boojnet)",
+    "value": "https://sepolia-era.zksync.network/",
+    "description": "Alt Explorer for chain ZKsync Era Sepolia Testnet (Boojnet)",
+    "url": "https://sepolia-era.zksync.network/"
+  },
+  {
+    "key": "chain_id for Abstract Mainnet",
+    "value": "2741",
+    "description": "Chain ID 2741 — Abstract Mainnet",
+    "url": "https://chainlist.org/chain/2741"
+  },
+  {
+    "key": "chain_id for Abstract Testnet",
+    "value": "11124",
+    "description": "Chain ID 11124 — Abstract Testnet",
+    "url": "https://chainlist.org/chain/11124"
+  },
+  {
+    "key": "chain_id for Altava Testnet",
+    "value": "565",
+    "description": "Chain ID 565 — Altava Testnet",
+    "url": "https://chainlist.org/chain/565"
+  },
+  {
+    "key": "chain_id for Creator (Zepeto) Testnet",
+    "value": "4654",
+    "description": "Chain ID 4654 — Creator (Zepeto) Testnet",
+    "url": "https://chainlist.org/chain/4654"
+  },
+  {
+    "key": "chain_id for Cronos Dev Testnet",
+    "value": "1282",
+    "description": "Chain ID 1282 — Cronos Dev Testnet",
+    "url": "https://chainlist.org/chain/1282"
+  },
+  {
+    "key": "chain_id for Cronos Mainnet",
+    "value": "388",
+    "description": "Chain ID 388 — Cronos Mainnet",
+    "url": "https://chainlist.org/chain/388"
+  },
+  {
+    "key": "chain_id for Cronos Testnet",
+    "value": "240",
+    "description": "Chain ID 240 — Cronos Testnet",
+    "url": "https://chainlist.org/chain/240"
+  },
+  {
+    "key": "chain_id for GenLayer Testnet",
+    "value": "4221",
+    "description": "Chain ID 4221 — GenLayer Testnet",
+    "url": "https://chainlist.org/chain/4221"
+  },
+  {
+    "key": "chain_id for GRVT Mainnet",
+    "value": "325",
+    "description": "Chain ID 325 — GRVT Mainnet",
+    "url": "https://chainlist.org/chain/325"
+  },
+  {
+    "key": "chain_id for GRVT Testnet",
+    "value": "326",
+    "description": "Chain ID 326 — GRVT Testnet",
+    "url": "https://chainlist.org/chain/326"
+  },
+  {
+    "key": "chain_id for Heurist Testnet",
+    "value": "207788",
+    "description": "Chain ID 207788 — Heurist Testnet",
+    "url": "https://chainlist.org/chain/207788"
+  },
+  {
+    "key": "chain_id for Lens Mainnet",
+    "value": "232",
+    "description": "Chain ID 232 — Lens Mainnet",
+    "url": "https://chainlist.org/chain/232"
+  },
+  {
+    "key": "chain_id for Lens Testnet",
+    "value": "37111",
+    "description": "Chain ID 37111 — Lens Testnet",
+    "url": "https://chainlist.org/chain/37111"
+  },
+  {
+    "key": "chain_id for Memento Mainnet",
+    "value": "51888",
+    "description": "Chain ID 51888 — Memento Mainnet",
+    "url": "https://chainlist.org/chain/51888"
+  },
+  {
+    "key": "chain_id for Memento Testnet",
+    "value": "2129",
+    "description": "Chain ID 2129 — Memento Testnet",
+    "url": "https://chainlist.org/chain/2129"
+  },
+  {
+    "key": "chain_id for OpenZK Mainnet",
+    "value": "1345",
+    "description": "Chain ID 1345 — OpenZK Mainnet",
+    "url": "https://chainlist.org/chain/1345"
+  },
+  {
+    "key": "chain_id for OpenZK Testnet",
+    "value": "4681",
+    "description": "Chain ID 4681 — OpenZK Testnet",
+    "url": "https://chainlist.org/chain/4681"
+  },
+  {
+    "key": "chain_id for Ripio LaChain Mainnet",
+    "value": "2904",
+    "description": "Chain ID 2904 — Ripio LaChain Mainnet",
+    "url": "https://chainlist.org/chain/2904"
+  },
+  {
+    "key": "chain_id for Ripio LaChain Testnet",
+    "value": "14183",
+    "description": "Chain ID 14183 — Ripio LaChain Testnet",
+    "url": "https://chainlist.org/chain/14183"
+  },
+  {
+    "key": "chain_id for Sophon Mainnet",
+    "value": "50104",
+    "description": "Chain ID 50104 — Sophon Mainnet",
+    "url": "https://chainlist.org/chain/50104"
+  },
+  {
+    "key": "chain_id for Sophon Testnet",
+    "value": "531050104",
+    "description": "Chain ID 531050104 — Sophon Testnet",
+    "url": "https://chainlist.org/chain/531050104"
+  },
+  {
+    "key": "chain_id for Space and Time Mainnet",
+    "value": "1217",
+    "description": "Chain ID 1217 — Space and Time Mainnet",
+    "url": "https://chainlist.org/chain/1217"
+  },
+  {
+    "key": "chain_id for Space and Time Testnet",
+    "value": "212000",
+    "description": "Chain ID 212000 — Space and Time Testnet",
+    "url": "https://chainlist.org/chain/212000"
+  },
+  {
+    "key": "chain_id for Wonder Chain Testnet",
+    "value": "96371",
+    "description": "Chain ID 96371 — Wonder Chain Testnet",
+    "url": "https://chainlist.org/chain/96371"
+  },
+  {
+    "key": "chain_id for XPLA Mainnet",
+    "value": "375",
+    "description": "Chain ID 375 — XPLA Mainnet",
+    "url": "https://chainlist.org/chain/375"
+  },
+  {
+    "key": "chain_id for XPLA Testnet",
+    "value": "475",
+    "description": "Chain ID 475 — XPLA Testnet",
+    "url": "https://chainlist.org/chain/475"
+  },
+  {
+    "key": "chain_id for Xsolla Dev Testnet",
+    "value": "555776",
+    "description": "Chain ID 555776 — Xsolla Dev Testnet",
+    "url": "https://chainlist.org/chain/555776"
+  },
+  {
+    "key": "chain_id for Xsolla Testnet",
+    "value": "555272",
+    "description": "Chain ID 555272 — Xsolla Testnet",
+    "url": "https://chainlist.org/chain/555272"
+  },
+  {
+    "key": "chain_id for ZaynZK Testnet",
+    "value": "9296",
+    "description": "Chain ID 9296 — ZaynZK Testnet",
+    "url": "https://chainlist.org/chain/9296"
+  },
+  {
+    "key": "chain_id for Zeeve Testnet",
+    "value": "2127",
+    "description": "Chain ID 2127 — Zeeve Testnet",
+    "url": "https://chainlist.org/chain/2127"
+  },
+  {
+    "key": "chain_id for Zero Mainnet",
+    "value": "543210",
+    "description": "Chain ID 543210 — Zero Mainnet",
+    "url": "https://chainlist.org/chain/543210"
+  },
+  {
+    "key": "chain_id for Zero Testnet",
+    "value": "43210",
+    "description": "Chain ID 43210 — Zero Testnet",
+    "url": "https://chainlist.org/chain/43210"
+  },
+  {
+    "key": "chain_id for zkCandy Mainnet",
+    "value": "320",
+    "description": "Chain ID 320 — zkCandy Mainnet",
+    "url": "https://chainlist.org/chain/320"
+  },
+  {
+    "key": "chain_id for ZKsync Era Mainnet",
+    "value": "324",
+    "description": "Chain ID 324 — ZKsync Era Mainnet",
+    "url": "https://chainlist.org/chain/324"
+  },
+  {
+    "key": "chain_id for ZKsync Era Sepolia Testnet (Boojnet)",
+    "value": "300",
+    "description": "Chain ID 300 — ZKsync Era Sepolia Testnet (Boojnet)",
+    "url": "https://chainlist.org/chain/300"
+  },
+  {
+    "key": "chain_id for ZKsync Era Stage Gateway",
+    "value": "123",
+    "description": "Chain ID 123 — ZKsync Era Stage Gateway",
+    "url": "https://chainlist.org/chain/123"
+  },
+  {
+    "key": "chain_id for ZKsync Era Stage Validium",
+    "value": "6475",
+    "description": "Chain ID 6475 — ZKsync Era Stage Validium",
+    "url": "https://chainlist.org/chain/6475"
+  },
+  {
+    "key": "chain_id for ZKsync Era stage-proofs",
+    "value": "499",
+    "description": "Chain ID 499 — ZKsync Era stage-proofs",
+    "url": "https://chainlist.org/chain/499"
+  },
+  {
+    "key": "chain_id for ZKsync Gateway Mainnet",
+    "value": "9075",
+    "description": "Chain ID 9075 — ZKsync Gateway Mainnet",
+    "url": "https://chainlist.org/chain/9075"
+  },
+  {
+    "key": "chain_id for ZKsync Gateway Testnet",
+    "value": "32657",
+    "description": "Chain ID 32657 — ZKsync Gateway Testnet",
+    "url": "https://chainlist.org/chain/32657"
+  },
+  {
+    "key": "chain_id for ZKsync OS Stage",
+    "value": "3770",
+    "description": "Chain ID 3770 — ZKsync OS Stage",
+    "url": "https://chainlist.org/chain/3770"
+  },
+  {
+    "key": "ChainAdmin Owner for Abstract Mainnet",
+    "value": "https://app.safe.global/home?safe=eth:0x7F3EaB9ccf1d8B9705F7ede895d3b4aC1b631063",
+    "description": "ChainAdmin Owner for chain Abstract Mainnet",
+    "url": "https://app.safe.global/home?safe=eth:0x7F3EaB9ccf1d8B9705F7ede895d3b4aC1b631063"
+  },
+  {
+    "key": "ChainAdmin Owner for Lens Mainnet",
+    "value": "https://app.safe.global/home?safe=eth:0x4968A0E4b025eD7d095753E54058377969b41abC",
+    "description": "ChainAdmin Owner for chain Lens Mainnet",
+    "url": "https://app.safe.global/home?safe=eth:0x4968A0E4b025eD7d095753E54058377969b41abC"
+  },
+  {
+    "key": "ChainAdmin Owner for Sophon Mainnet",
+    "value": "https://app.safe.global/home?safe=eth:0xe4644b6d106A18062344c0A853666bc0B8f052d1",
+    "description": "ChainAdmin Owner for chain Sophon Mainnet",
+    "url": "https://app.safe.global/home?safe=eth:0xe4644b6d106A18062344c0A853666bc0B8f052d1"
+  },
+  {
+    "key": "ChainAdmin Owner for ZKsync Era Mainnet",
+    "value": "https://app.safe.global/home?safe=eth:0x4e4943346848c4867F81dFb37c4cA9C5715A7828",
+    "description": "ChainAdmin Owner for chain ZKsync Era Mainnet",
+    "url": "https://app.safe.global/home?safe=eth:0x4e4943346848c4867F81dFb37c4cA9C5715A7828"
+  },
+  {
+    "key": "ChainAdmin Owner for ZKsync Gateway Mainnet",
+    "value": "https://app.safe.global/transactions/queue?safe=eth:0x4e4943346848c4867F81dFb37c4cA9C5715A7828",
+    "description": "ChainAdmin Owner for chain ZKsync Gateway Mainnet",
+    "url": "https://app.safe.global/transactions/queue?safe=eth:0x4e4943346848c4867F81dFb37c4cA9C5715A7828"
+  },
+  {
+    "key": "HTTPS RPC for Abstract Mainnet",
+    "value": "https://api.mainnet.abs.xyz/",
+    "description": "HTTPS RPC for chain Abstract Mainnet",
+    "url": "https://api.mainnet.abs.xyz/"
+  },
+  {
+    "key": "HTTPS RPC for Abstract Testnet",
+    "value": "https://api.testnet.abs.xyz",
+    "description": "HTTPS RPC for chain Abstract Testnet",
+    "url": "https://api.testnet.abs.xyz"
+  },
+  {
+    "key": "HTTPS RPC for Creator (Zepeto) Testnet",
+    "value": "https://creator-testnet.rpc.caldera.xyz/http",
+    "description": "HTTPS RPC for chain Creator (Zepeto) Testnet",
+    "url": "https://creator-testnet.rpc.caldera.xyz/http"
+  },
+  {
+    "key": "HTTPS RPC for Cronos Mainnet",
+    "value": "https://mainnet.zkevm.cronos.org/",
+    "description": "HTTPS RPC for chain Cronos Mainnet",
+    "url": "https://mainnet.zkevm.cronos.org/"
+  },
+  {
+    "key": "HTTPS RPC for Cronos Testnet",
+    "value": "https://testnet.zkevm.cronos.org",
+    "description": "HTTPS RPC for chain Cronos Testnet",
+    "url": "https://testnet.zkevm.cronos.org"
+  },
+  {
+    "key": "HTTPS RPC for GenLayer Testnet",
+    "value": "https://genlayer-testnet.rpc.caldera.xyz/http",
+    "description": "HTTPS RPC for chain GenLayer Testnet",
+    "url": "https://genlayer-testnet.rpc.caldera.xyz/http"
+  },
+  {
+    "key": "HTTPS RPC for Heurist Testnet",
+    "value": "https://enterprise.onerpc.com/heurist_testnet?apikey=CHTmpvMjgydBHkgQZwZojuRAjSE9h2vV",
+    "description": "HTTPS RPC for chain Heurist Testnet",
+    "url": "https://enterprise.onerpc.com/heurist_testnet?apikey=CHTmpvMjgydBHkgQZwZojuRAjSE9h2vV"
+  },
+  {
+    "key": "HTTPS RPC for Lens Mainnet",
+    "value": "https://rpc.lens.xyz",
+    "description": "HTTPS RPC for chain Lens Mainnet",
+    "url": "https://rpc.lens.xyz"
+  },
+  {
+    "key": "HTTPS RPC for Lens Testnet",
+    "value": "https://api.staging.lens.zksync.dev",
+    "description": "HTTPS RPC for chain Lens Testnet",
+    "url": "https://api.staging.lens.zksync.dev"
+  },
+  {
+    "key": "HTTPS RPC for Memento Testnet",
+    "value": "https://rpc.memento.zeeve.online",
+    "description": "HTTPS RPC for chain Memento Testnet",
+    "url": "https://rpc.memento.zeeve.online"
+  },
+  {
+    "key": "HTTPS RPC for OpenZK Mainnet",
+    "value": "https://openzk.calderachain.xyz/http",
+    "description": "HTTPS RPC for chain OpenZK Mainnet",
+    "url": "https://openzk.calderachain.xyz/http"
+  },
+  {
+    "key": "HTTPS RPC for OpenZK Testnet",
+    "value": "https://openzk-testnet.rpc.caldera.xyz/http",
+    "description": "HTTPS RPC for chain OpenZK Testnet",
+    "url": "https://openzk-testnet.rpc.caldera.xyz/http"
+  },
+  {
+    "key": "HTTPS RPC for Ripio LaChain Mainnet",
+    "value": "https://rpc1.zk.lachain.network/",
+    "description": "HTTPS RPC for chain Ripio LaChain Mainnet",
+    "url": "https://rpc1.zk.lachain.network/"
+  },
+  {
+    "key": "HTTPS RPC for Ripio LaChain Testnet",
+    "value": "https://rpc1-testnet-zk.lachain.network/api",
+    "description": "HTTPS RPC for chain Ripio LaChain Testnet",
+    "url": "https://rpc1-testnet-zk.lachain.network/api"
+  },
+  {
+    "key": "HTTPS RPC for Sophon Mainnet",
+    "value": "https://rpc.sophon.xyz/",
+    "description": "HTTPS RPC for chain Sophon Mainnet",
+    "url": "https://rpc.sophon.xyz/"
+  },
+  {
+    "key": "HTTPS RPC for Sophon Testnet",
+    "value": "https://rpc.testnet.sophon.xyz/",
+    "description": "HTTPS RPC for chain Sophon Testnet",
+    "url": "https://rpc.testnet.sophon.xyz/"
+  },
+  {
+    "key": "HTTPS RPC for Space and Time Mainnet",
+    "value": "https://spaceandtime.calderachain.xyz/http",
+    "description": "HTTPS RPC for chain Space and Time Mainnet",
+    "url": "https://spaceandtime.calderachain.xyz/http"
+  },
+  {
+    "key": "HTTPS RPC for Space and Time Testnet",
+    "value": "https://sxt-testnet-avail.rpc.caldera.xyz/http",
+    "description": "HTTPS RPC for chain Space and Time Testnet",
+    "url": "https://sxt-testnet-avail.rpc.caldera.xyz/http"
+  },
+  {
+    "key": "HTTPS RPC for Wonder Chain Testnet",
+    "value": "https://rpc.testnet.wonderchain.org/",
+    "description": "HTTPS RPC for chain Wonder Chain Testnet",
+    "url": "https://rpc.testnet.wonderchain.org/"
+  },
+  {
+    "key": "HTTPS RPC for XPLA Mainnet",
+    "value": "https://xpla.calderachain.xyz/http",
+    "description": "HTTPS RPC for chain XPLA Mainnet",
+    "url": "https://xpla.calderachain.xyz/http"
+  },
+  {
+    "key": "HTTPS RPC for XPLA Testnet",
+    "value": "https://xpla-testnet.rpc.caldera.xyz/http",
+    "description": "HTTPS RPC for chain XPLA Testnet",
+    "url": "https://xpla-testnet.rpc.caldera.xyz/http"
+  },
+  {
+    "key": "HTTPS RPC for Xsolla Testnet",
+    "value": "https://zkrpc.xsollazk.com",
+    "description": "HTTPS RPC for chain Xsolla Testnet",
+    "url": "https://zkrpc.xsollazk.com"
+  },
+  {
+    "key": "HTTPS RPC for ZaynZK Testnet",
+    "value": "https://zaynzk-testnet.rpc.caldera.xyz/http",
+    "description": "HTTPS RPC for chain ZaynZK Testnet",
+    "url": "https://zaynzk-testnet.rpc.caldera.xyz/http"
+  },
+  {
+    "key": "HTTPS RPC for Zero Mainnet",
+    "value": "https://zero-network.calderachain.xyz/http",
+    "description": "HTTPS RPC for chain Zero Mainnet",
+    "url": "https://zero-network.calderachain.xyz/http"
+  },
+  {
+    "key": "HTTPS RPC for Zero Testnet",
+    "value": "https://zerion-testnet-proofs.rpc.caldera.xyz/http",
+    "description": "HTTPS RPC for chain Zero Testnet",
+    "url": "https://zerion-testnet-proofs.rpc.caldera.xyz/http"
+  },
+  {
+    "key": "HTTPS RPC for zkCandy Mainnet",
+    "value": "https://rpc.zkcandy.io",
+    "description": "HTTPS RPC for chain zkCandy Mainnet",
+    "url": "https://rpc.zkcandy.io"
+  },
+  {
+    "key": "HTTPS RPC for ZKsync Era Mainnet",
+    "value": "https://mainnet.era.zksync.io",
+    "description": "HTTPS RPC for chain ZKsync Era Mainnet",
+    "url": "https://mainnet.era.zksync.io"
+  },
+  {
+    "key": "HTTPS RPC for ZKsync Era Sepolia Testnet (Boojnet)",
+    "value": "https://sepolia.era.zksync.dev",
+    "description": "HTTPS RPC for chain ZKsync Era Sepolia Testnet (Boojnet)",
+    "url": "https://sepolia.era.zksync.dev"
+  },
+  {
+    "key": "HTTPS RPC for ZKsync Era Stage Gateway",
+    "value": "https://rpc.era-gateway-stage.zksync.dev/",
+    "description": "HTTPS RPC for chain ZKsync Era Stage Gateway",
+    "url": "https://rpc.era-gateway-stage.zksync.dev/"
+  },
+  {
+    "key": "HTTPS RPC for ZKsync Era Stage Validium",
+    "value": "https://dev-api.era-stage-validium.zksync.dev/",
+    "description": "HTTPS RPC for chain ZKsync Era Stage Validium",
+    "url": "https://dev-api.era-stage-validium.zksync.dev/"
+  },
+  {
+    "key": "HTTPS RPC for ZKsync Era stage-proofs",
+    "value": "https://dev-api.era-stage-proofs.zksync.dev/",
+    "description": "HTTPS RPC for chain ZKsync Era stage-proofs",
+    "url": "https://dev-api.era-stage-proofs.zksync.dev/"
+  },
+  {
+    "key": "HTTPS RPC for ZKsync Gateway Mainnet",
+    "value": "https://rpc.era-gateway-mainnet.zksync.dev/",
+    "description": "HTTPS RPC for chain ZKsync Gateway Mainnet",
+    "url": "https://rpc.era-gateway-mainnet.zksync.dev/"
+  },
+  {
+    "key": "HTTPS RPC for ZKsync Gateway Testnet",
+    "value": "https://rpc.era-gateway-testnet.zksync.dev/",
+    "description": "HTTPS RPC for chain ZKsync Gateway Testnet",
+    "url": "https://rpc.era-gateway-testnet.zksync.dev/"
+  },
+  {
+    "key": "HTTPS RPC for ZKsync OS Stage",
+    "value": "https://zksync-os-stage2-api.zksync-nodes.com/",
+    "description": "HTTPS RPC for chain ZKsync OS Stage",
+    "url": "https://zksync-os-stage2-api.zksync-nodes.com/"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Abstract Mainnet",
+    "value": "https://etherscan.io/address/0x4b2d036d2c27192549ad5a2f2d9875e1843833de",
+    "description": "L1 Blob Operator (Commits batches) for chain Abstract Mainnet",
+    "url": "https://etherscan.io/address/0x4b2d036d2c27192549ad5a2f2d9875e1843833de"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Abstract Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x564d33de40b1af31aaa2b726eaf9dafbaf763577",
+    "description": "L1 Blob Operator (Commits batches) for chain Abstract Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x564d33de40b1af31aaa2b726eaf9dafbaf763577"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Creator (Zepeto) Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x31Ce03050Ae84af0d5E580A9c90edD8aAca15Be9",
+    "description": "L1 Blob Operator (Commits batches) for chain Creator (Zepeto) Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x31Ce03050Ae84af0d5E580A9c90edD8aAca15Be9"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Cronos Dev Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x3e703427CECdaae3c16d64C6cB7966F89D13Cf74",
+    "description": "L1 Blob Operator (Commits batches) for chain Cronos Dev Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x3e703427CECdaae3c16d64C6cB7966F89D13Cf74"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Cronos Mainnet",
+    "value": "https://etherscan.io/address/0x7fEA26A181A792B5107ee0a31e434F5dBcbBe0B7",
+    "description": "L1 Blob Operator (Commits batches) for chain Cronos Mainnet",
+    "url": "https://etherscan.io/address/0x7fEA26A181A792B5107ee0a31e434F5dBcbBe0B7"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Cronos Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xBBb4014a7259DE2cA4B771D81D525938A22aEe93",
+    "description": "L1 Blob Operator (Commits batches) for chain Cronos Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xBBb4014a7259DE2cA4B771D81D525938A22aEe93"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for GenLayer Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x0E4cF2be31297c08ec63C1B87Cc3769aA1cb1074",
+    "description": "L1 Blob Operator (Commits batches) for chain GenLayer Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x0E4cF2be31297c08ec63C1B87Cc3769aA1cb1074"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for GRVT Mainnet",
+    "value": "https://etherscan.io/address/0x0b114d4675Cb79507e68F2616c93e124122c6ef0",
+    "description": "L1 Blob Operator (Commits batches) for chain GRVT Mainnet",
+    "url": "https://etherscan.io/address/0x0b114d4675Cb79507e68F2616c93e124122c6ef0"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for GRVT Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xb40fD86E81aC2c0E5C0Bc5b50ec886638F4E2A59",
+    "description": "L1 Blob Operator (Commits batches) for chain GRVT Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xb40fD86E81aC2c0E5C0Bc5b50ec886638F4E2A59"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Heurist Testnet",
+    "value": "0xB35c97eA5e2b122A68318a25D6dB37a1C0354b22",
+    "description": "L1 Blob Operator (Commits batches) for chain Heurist Testnet",
+    "url": "0xB35c97eA5e2b122A68318a25D6dB37a1C0354b22"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Lens Mainnet",
+    "value": "https://etherscan.io/address/0x3ea4d1684c65756e892b0b8d3e331e10d9d3a484",
+    "description": "L1 Blob Operator (Commits batches) for chain Lens Mainnet",
+    "url": "https://etherscan.io/address/0x3ea4d1684c65756e892b0b8d3e331e10d9d3a484"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Lens Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xf0756ae07ce2f242a3d1302b9768ca9fb79f2170",
+    "description": "L1 Blob Operator (Commits batches) for chain Lens Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xf0756ae07ce2f242a3d1302b9768ca9fb79f2170"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Memento Mainnet",
+    "value": "https://etherscan.io/address/0x2C0611306c2319df96191493E8f636383d48D2b1",
+    "description": "L1 Blob Operator (Commits batches) for chain Memento Mainnet",
+    "url": "https://etherscan.io/address/0x2C0611306c2319df96191493E8f636383d48D2b1"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for OpenZK Mainnet",
+    "value": "https://etherscan.io/address/0x1C841ED065149e32E4c43E3b10eCD71f1feD1db7",
+    "description": "L1 Blob Operator (Commits batches) for chain OpenZK Mainnet",
+    "url": "https://etherscan.io/address/0x1C841ED065149e32E4c43E3b10eCD71f1feD1db7"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for OpenZK Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x85C14955d6D0cf3ac88E779420cbE53a7b9dCB38",
+    "description": "L1 Blob Operator (Commits batches) for chain OpenZK Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x85C14955d6D0cf3ac88E779420cbE53a7b9dCB38"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Ripio LaChain Mainnet",
+    "value": "https://etherscan.io/address/0xDAC936134633C309BA831239e5e25Cfe5094b229",
+    "description": "L1 Blob Operator (Commits batches) for chain Ripio LaChain Mainnet",
+    "url": "https://etherscan.io/address/0xDAC936134633C309BA831239e5e25Cfe5094b229"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Ripio LaChain Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x1Ba0d67e8500BaBbF076C738C70da57DaABA04cc",
+    "description": "L1 Blob Operator (Commits batches) for chain Ripio LaChain Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x1Ba0d67e8500BaBbF076C738C70da57DaABA04cc"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Sophon Mainnet",
+    "value": "https://etherscan.io/address/0x78325837c780788ce6aff7883fdf68890010fe30",
+    "description": "L1 Blob Operator (Commits batches) for chain Sophon Mainnet",
+    "url": "https://etherscan.io/address/0x78325837c780788ce6aff7883fdf68890010fe30"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Sophon Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x9b86a2425024f6e2eaa114ea81a9effaac93f3e2",
+    "description": "L1 Blob Operator (Commits batches) for chain Sophon Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x9b86a2425024f6e2eaa114ea81a9effaac93f3e2"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Space and Time Mainnet",
+    "value": "https://etherscan.io/address/0x2526B437560CF8dC1a706A87494996D48eDFb701",
+    "description": "L1 Blob Operator (Commits batches) for chain Space and Time Mainnet",
+    "url": "https://etherscan.io/address/0x2526B437560CF8dC1a706A87494996D48eDFb701"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Space and Time Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xDF841F75279fBc860AFBEC8079AA33d68340A47C",
+    "description": "L1 Blob Operator (Commits batches) for chain Space and Time Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xDF841F75279fBc860AFBEC8079AA33d68340A47C"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Wonder Chain Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xBBBb2A7e67a56C2C41bd00ebc84119c338AeC9cA",
+    "description": "L1 Blob Operator (Commits batches) for chain Wonder Chain Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xBBBb2A7e67a56C2C41bd00ebc84119c338AeC9cA"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for XPLA Mainnet",
+    "value": "https://etherscan.io/address/0x89E0c6ae03bb7Bec31CE0e36b4a896EaCB3Eb4c1",
+    "description": "L1 Blob Operator (Commits batches) for chain XPLA Mainnet",
+    "url": "https://etherscan.io/address/0x89E0c6ae03bb7Bec31CE0e36b4a896EaCB3Eb4c1"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for XPLA Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x31413C4d4A4f0d5F72130542cB10Ce973193Ff02",
+    "description": "L1 Blob Operator (Commits batches) for chain XPLA Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x31413C4d4A4f0d5F72130542cB10Ce973193Ff02"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Xsolla Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xFe425aaE6b5E4908337B688C8da536bC62792a9e",
+    "description": "L1 Blob Operator (Commits batches) for chain Xsolla Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xFe425aaE6b5E4908337B688C8da536bC62792a9e"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for ZaynZK Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x59A35C937927bbBeFF8a0EDE5AF607A93B3B525d",
+    "description": "L1 Blob Operator (Commits batches) for chain ZaynZK Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x59A35C937927bbBeFF8a0EDE5AF607A93B3B525d"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Zeeve Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xBbBBaca2566b97fA5795C09bbA02E327aa51857D",
+    "description": "L1 Blob Operator (Commits batches) for chain Zeeve Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xBbBBaca2566b97fA5795C09bbA02E327aa51857D"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Zero Mainnet",
+    "value": "https://etherscan.io/address/0x479B7c95b9509E1A834C994fc94e3581aA8A73B9",
+    "description": "L1 Blob Operator (Commits batches) for chain Zero Mainnet",
+    "url": "https://etherscan.io/address/0x479B7c95b9509E1A834C994fc94e3581aA8A73B9"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for Zero Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xa4ad051B31C5ec2DBD37eEc194eEAc13B4940872",
+    "description": "L1 Blob Operator (Commits batches) for chain Zero Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xa4ad051B31C5ec2DBD37eEc194eEAc13B4940872"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for zkCandy Mainnet",
+    "value": "https://etherscan.io/address/0xc300Cc8f451C9EF8DaDE822bd0f9636117209F70",
+    "description": "L1 Blob Operator (Commits batches) for chain zkCandy Mainnet",
+    "url": "https://etherscan.io/address/0xc300Cc8f451C9EF8DaDE822bd0f9636117209F70"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for ZKsync Era Mainnet",
+    "value": "https://etherscan.io/address/0xe1d8d4c8656949764c2c9fa9fab2c15d3f42e6c2",
+    "description": "L1 Blob Operator (Commits batches) for chain ZKsync Era Mainnet",
+    "url": "https://etherscan.io/address/0xe1d8d4c8656949764c2c9fa9fab2c15d3f42e6c2"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for ZKsync Era Sepolia Testnet (Boojnet)",
+    "value": "https://sepolia.etherscan.io/address/0x2e31123809D575cccb62331A279A9dD9C8d9bBd6",
+    "description": "L1 Blob Operator (Commits batches) for chain ZKsync Era Sepolia Testnet (Boojnet)",
+    "url": "https://sepolia.etherscan.io/address/0x2e31123809D575cccb62331A279A9dD9C8d9bBd6"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for ZKsync Era Stage Gateway",
+    "value": "https://sepolia.etherscan.io/address/0xB26AfF6119eF4e908AC3a9DfdD4b0d24E0E15D13",
+    "description": "L1 Blob Operator (Commits batches) for chain ZKsync Era Stage Gateway",
+    "url": "https://sepolia.etherscan.io/address/0xB26AfF6119eF4e908AC3a9DfdD4b0d24E0E15D13"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for ZKsync Era Stage Validium",
+    "value": "https://sepolia.etherscan.io/address/0x990a7fe8da5d227ebb15e0c2e480d97f2666c9fe",
+    "description": "L1 Blob Operator (Commits batches) for chain ZKsync Era Stage Validium",
+    "url": "https://sepolia.etherscan.io/address/0x990a7fe8da5d227ebb15e0c2e480d97f2666c9fe"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for ZKsync Era stage-proofs",
+    "value": "https://sepolia.etherscan.io/address/0x1edc35c96144e77e162e5fba34343078dab63acd",
+    "description": "L1 Blob Operator (Commits batches) for chain ZKsync Era stage-proofs",
+    "url": "https://sepolia.etherscan.io/address/0x1edc35c96144e77e162e5fba34343078dab63acd"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for ZKsync Gateway Mainnet",
+    "value": "https://etherscan.io/address/0xcEB302741E355E7Cf30b8479b7aD104d0C171EBF",
+    "description": "L1 Blob Operator (Commits batches) for chain ZKsync Gateway Mainnet",
+    "url": "https://etherscan.io/address/0xcEB302741E355E7Cf30b8479b7aD104d0C171EBF"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for ZKsync Gateway Testnet",
+    "value": "https://sepolia.etherscan.io/search?q=0x6b936d1a77B971E87925C63c327659008114b761",
+    "description": "L1 Blob Operator (Commits batches) for chain ZKsync Gateway Testnet",
+    "url": "https://sepolia.etherscan.io/search?q=0x6b936d1a77B971E87925C63c327659008114b761"
+  },
+  {
+    "key": "L1 Blob Operator (Commits batches) for ZKsync OS Stage",
+    "value": "https://sepolia.etherscan.io/address/0xff3533eb282a7108b8a46279b512b4047afefc5e",
+    "description": "L1 Blob Operator (Commits batches) for chain ZKsync OS Stage",
+    "url": "https://sepolia.etherscan.io/address/0xff3533eb282a7108b8a46279b512b4047afefc5e"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Abstract Mainnet",
+    "value": "https://etherscan.io/address/0x415ed64d42bc0c37aeaaef79aa767d963ef38807",
+    "description": "L1 Operator (Prove and Execute batches) for chain Abstract Mainnet",
+    "url": "https://etherscan.io/address/0x415ed64d42bc0c37aeaaef79aa767d963ef38807"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Abstract Testnet",
+    "value": "https://explorer.era-gateway-testnet.zksync.dev/address/0xcf43bdB3115547833FFe4D33d864d25135012648",
+    "description": "L1 Operator (Prove and Execute batches) for chain Abstract Testnet",
+    "url": "https://explorer.era-gateway-testnet.zksync.dev/address/0xcf43bdB3115547833FFe4D33d864d25135012648"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Creator (Zepeto) Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x76bC72be75bCA5a6eac902a896D8C4F4be4F96aD",
+    "description": "L1 Operator (Prove and Execute batches) for chain Creator (Zepeto) Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x76bC72be75bCA5a6eac902a896D8C4F4be4F96aD"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Cronos Dev Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x0890775B2fBF21d7c288f0aa4568417cDaF95b41",
+    "description": "L1 Operator (Prove and Execute batches) for chain Cronos Dev Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x0890775B2fBF21d7c288f0aa4568417cDaF95b41"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Cronos Mainnet",
+    "value": "https://etherscan.io/address/0xb9d48DaF26F3CBE01A959F09f98E8a2eC8204122",
+    "description": "L1 Operator (Prove and Execute batches) for chain Cronos Mainnet",
+    "url": "https://etherscan.io/address/0xb9d48DaF26F3CBE01A959F09f98E8a2eC8204122"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Cronos Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x8C0FE57137544d3548E9F0cEA8a84C7BdFEcAF6A",
+    "description": "L1 Operator (Prove and Execute batches) for chain Cronos Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x8C0FE57137544d3548E9F0cEA8a84C7BdFEcAF6A"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for GenLayer Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x6a433a9762dE9b9D3aEf3831Adf4753251291405",
+    "description": "L1 Operator (Prove and Execute batches) for chain GenLayer Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x6a433a9762dE9b9D3aEf3831Adf4753251291405"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for GRVT Mainnet",
+    "value": "https://etherscan.io/address/0x58D14960E0a2be353eDdE61ad719196A2b816522",
+    "description": "L1 Operator (Prove and Execute batches) for chain GRVT Mainnet",
+    "url": "https://etherscan.io/address/0x58D14960E0a2be353eDdE61ad719196A2b816522"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for GRVT Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xF4272af9987c949aC6329aFfaC211004cEaDAC7f",
+    "description": "L1 Operator (Prove and Execute batches) for chain GRVT Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xF4272af9987c949aC6329aFfaC211004cEaDAC7f"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Heurist Testnet",
+    "value": "0x0b272cf53d5a999dab88c1ba334878a22ab56888",
+    "description": "L1 Operator (Prove and Execute batches) for chain Heurist Testnet",
+    "url": "0x0b272cf53d5a999dab88c1ba334878a22ab56888"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Lens Mainnet",
+    "value": "https://etherscan.io/address/0x477c1b7dc1091389cbd3eef21efb00081606ab67",
+    "description": "L1 Operator (Prove and Execute batches) for chain Lens Mainnet",
+    "url": "https://etherscan.io/address/0x477c1b7dc1091389cbd3eef21efb00081606ab67"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Lens Testnet",
+    "value": "https://explorer.era-gateway-stage.zksync.dev/address/0x5fd059312C36EaCfBb215ed3Ec32D80d0cB9B47F",
+    "description": "L1 Operator (Prove and Execute batches) for chain Lens Testnet",
+    "url": "https://explorer.era-gateway-stage.zksync.dev/address/0x5fd059312C36EaCfBb215ed3Ec32D80d0cB9B47F"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Memento Mainnet",
+    "value": "https://etherscan.io/address/0xBB57444579AfDe79B11a51E0a91D1dc1A9742f90",
+    "description": "L1 Operator (Prove and Execute batches) for chain Memento Mainnet",
+    "url": "https://etherscan.io/address/0xBB57444579AfDe79B11a51E0a91D1dc1A9742f90"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for OpenZK Mainnet",
+    "value": "https://etherscan.io/address/0x59B84B24e307682DF830B32DDC826FBbe003C210",
+    "description": "L1 Operator (Prove and Execute batches) for chain OpenZK Mainnet",
+    "url": "https://etherscan.io/address/0x59B84B24e307682DF830B32DDC826FBbe003C210"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for OpenZK Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x64804998808f81f5fb0c4285c7a58c855c85329c",
+    "description": "L1 Operator (Prove and Execute batches) for chain OpenZK Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x64804998808f81f5fb0c4285c7a58c855c85329c"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Ripio LaChain Mainnet",
+    "value": "https://etherscan.io/address/0xB66d4AF4E96bF96026454A6A150EDD2CE55E9E67",
+    "description": "L1 Operator (Prove and Execute batches) for chain Ripio LaChain Mainnet",
+    "url": "https://etherscan.io/address/0xB66d4AF4E96bF96026454A6A150EDD2CE55E9E67"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Ripio LaChain Testnet",
+    "value": "https://explorer.era-gateway-testnet.zksync.dev/address/0x2971eb18FF05A5D24572EF593F1C5db25CbDA981",
+    "description": "L1 Operator (Prove and Execute batches) for chain Ripio LaChain Testnet",
+    "url": "https://explorer.era-gateway-testnet.zksync.dev/address/0x2971eb18FF05A5D24572EF593F1C5db25CbDA981"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Sophon Mainnet",
+    "value": "https://etherscan.io/address/0xcd0b5a01abe9c14f6efbc610c02ecf0fb69855da",
+    "description": "L1 Operator (Prove and Execute batches) for chain Sophon Mainnet",
+    "url": "https://etherscan.io/address/0xcd0b5a01abe9c14f6efbc610c02ecf0fb69855da"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Sophon Testnet",
+    "value": "https://explorer.era-gateway-testnet.zksync.dev/address/0x7312bFEDB7c22573962Ad721FB4c91d45B240fA2",
+    "description": "L1 Operator (Prove and Execute batches) for chain Sophon Testnet",
+    "url": "https://explorer.era-gateway-testnet.zksync.dev/address/0x7312bFEDB7c22573962Ad721FB4c91d45B240fA2"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Space and Time Mainnet",
+    "value": "https://etherscan.io/address/0xE18316BfDDE4e8893F41F94B3439183CfB81A5d1",
+    "description": "L1 Operator (Prove and Execute batches) for chain Space and Time Mainnet",
+    "url": "https://etherscan.io/address/0xE18316BfDDE4e8893F41F94B3439183CfB81A5d1"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Space and Time Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xA93314b0a8A2AB412ccaf4aE879854EB547890E2",
+    "description": "L1 Operator (Prove and Execute batches) for chain Space and Time Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xA93314b0a8A2AB412ccaf4aE879854EB547890E2"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Wonder Chain Testnet",
+    "value": "https://explorer.era-gateway-testnet.zksync.dev/address/0xAAAA547368868BddE78b9b1bc87A565070525FBA",
+    "description": "L1 Operator (Prove and Execute batches) for chain Wonder Chain Testnet",
+    "url": "https://explorer.era-gateway-testnet.zksync.dev/address/0xAAAA547368868BddE78b9b1bc87A565070525FBA"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for XPLA Mainnet",
+    "value": "https://etherscan.io/address/0x4FD0844fA5a39202624fD06a1F6E75fFa607708f",
+    "description": "L1 Operator (Prove and Execute batches) for chain XPLA Mainnet",
+    "url": "https://etherscan.io/address/0x4FD0844fA5a39202624fD06a1F6E75fFa607708f"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for XPLA Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x915cA5Ef8Ac44Ed5bd7c1019f01a5311743AC8D4",
+    "description": "L1 Operator (Prove and Execute batches) for chain XPLA Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x915cA5Ef8Ac44Ed5bd7c1019f01a5311743AC8D4"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Xsolla Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xA9BDFC0856D1a2d0A1fFB0090D121A1A20A091AC",
+    "description": "L1 Operator (Prove and Execute batches) for chain Xsolla Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xA9BDFC0856D1a2d0A1fFB0090D121A1A20A091AC"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for ZaynZK Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xcdE160aA912d09B43907c4fFC891ec13b40bE35b",
+    "description": "L1 Operator (Prove and Execute batches) for chain ZaynZK Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xcdE160aA912d09B43907c4fFC891ec13b40bE35b"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Zeeve Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xAAaa80244d961bce747cFC1CE05071c6a69ab126",
+    "description": "L1 Operator (Prove and Execute batches) for chain Zeeve Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xAAaa80244d961bce747cFC1CE05071c6a69ab126"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Zero Mainnet",
+    "value": "https://etherscan.io/address/0x0F9B807d5B0cE12450059B425Dc35C727D65CB2F",
+    "description": "L1 Operator (Prove and Execute batches) for chain Zero Mainnet",
+    "url": "https://etherscan.io/address/0x0F9B807d5B0cE12450059B425Dc35C727D65CB2F"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for Zero Testnet",
+    "value": "https://sepolia.etherscan.io/address/0xD78F1B66d8e57D0A00897fe2EdCeD6708681Aa6c",
+    "description": "L1 Operator (Prove and Execute batches) for chain Zero Testnet",
+    "url": "https://sepolia.etherscan.io/address/0xD78F1B66d8e57D0A00897fe2EdCeD6708681Aa6c"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for zkCandy Mainnet",
+    "value": "https://etherscan.io/address/0x2B711ee00B50d67667c4439c28AeAf7B75CB6E0D",
+    "description": "L1 Operator (Prove and Execute batches) for chain zkCandy Mainnet",
+    "url": "https://etherscan.io/address/0x2B711ee00B50d67667c4439c28AeAf7B75CB6E0D"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for ZKsync Era Mainnet",
+    "value": "https://etherscan.io/address/0x30066439887c0a509cb38e45c9262e6924a29bbd",
+    "description": "L1 Operator (Prove and Execute batches) for chain ZKsync Era Mainnet",
+    "url": "https://etherscan.io/address/0x30066439887c0a509cb38e45c9262e6924a29bbd"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for ZKsync Era Sepolia Testnet (Boojnet)",
+    "value": "https://explorer.era-gateway-testnet.zksync.dev/address/0x29f6137c9777146D712d2624E44178016daf10dE",
+    "description": "L1 Operator (Prove and Execute batches) for chain ZKsync Era Sepolia Testnet (Boojnet)",
+    "url": "https://explorer.era-gateway-testnet.zksync.dev/address/0x29f6137c9777146D712d2624E44178016daf10dE"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for ZKsync Era Stage Gateway",
+    "value": "https://sepolia.etherscan.io/address/0x697924ed9b6bb3F41295040aB91Aca31AB7F6d10",
+    "description": "L1 Operator (Prove and Execute batches) for chain ZKsync Era Stage Gateway",
+    "url": "https://sepolia.etherscan.io/address/0x697924ed9b6bb3F41295040aB91Aca31AB7F6d10"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for ZKsync Era Stage Validium",
+    "value": "https://explorer.era-gateway-stage.zksync.dev/address/0x66814288F25b9a244bB0480c4953d6Aa98d5aeEb",
+    "description": "L1 Operator (Prove and Execute batches) for chain ZKsync Era Stage Validium",
+    "url": "https://explorer.era-gateway-stage.zksync.dev/address/0x66814288F25b9a244bB0480c4953d6Aa98d5aeEb"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for ZKsync Era stage-proofs",
+    "value": "https://explorer.era-gateway-stage.zksync.dev/address/0x1230007ae8529E38721669Af4D2fAbc769f0FB21",
+    "description": "L1 Operator (Prove and Execute batches) for chain ZKsync Era stage-proofs",
+    "url": "https://explorer.era-gateway-stage.zksync.dev/address/0x1230007ae8529E38721669Af4D2fAbc769f0FB21"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for ZKsync Gateway Mainnet",
+    "value": "https://etherscan.io/address/0xbF4c6806d1fF930B5bEcab99b93c5355bD08fFfE",
+    "description": "L1 Operator (Prove and Execute batches) for chain ZKsync Gateway Mainnet",
+    "url": "https://etherscan.io/address/0xbF4c6806d1fF930B5bEcab99b93c5355bD08fFfE"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for ZKsync Gateway Testnet",
+    "value": "https://sepolia.etherscan.io/address/0x9c6eE99a948727F80176e2733c789bb4F302Af19",
+    "description": "L1 Operator (Prove and Execute batches) for chain ZKsync Gateway Testnet",
+    "url": "https://sepolia.etherscan.io/address/0x9c6eE99a948727F80176e2733c789bb4F302Af19"
+  },
+  {
+    "key": "L1 Operator (Prove and Execute batches) for ZKsync OS Stage",
+    "value": "https://sepolia.etherscan.io/address/0x9554f0f6acaf2140c6b830e2b0629d1a973b9889",
+    "description": "L1 Operator (Prove and Execute batches) for chain ZKsync OS Stage",
+    "url": "https://sepolia.etherscan.io/address/0x9554f0f6acaf2140c6b830e2b0629d1a973b9889"
+  },
+  {
+    "key": "L2 Operator (collects fees) for Abstract Mainnet",
+    "value": "https://explorer.mainnet.abs.xyz/address/0x7f60048318AD245B29A2cE9E87733C22d1f8335E",
+    "description": "L2 Operator (collects fees) for chain Abstract Mainnet",
+    "url": "https://explorer.mainnet.abs.xyz/address/0x7f60048318AD245B29A2cE9E87733C22d1f8335E"
+  },
+  {
+    "key": "L2 Operator (collects fees) for Abstract Testnet",
+    "value": "https://explorer.testnet.abs.xyz/address/0x84ffdfa5737012752aa9bfc89c6865e22a40c446",
+    "description": "L2 Operator (collects fees) for chain Abstract Testnet",
+    "url": "https://explorer.testnet.abs.xyz/address/0x84ffdfa5737012752aa9bfc89c6865e22a40c446"
+  },
+  {
+    "key": "L2 Operator (collects fees) for Lens Mainnet",
+    "value": "https://explorer.lens.xyz/address/0x62Ae8d9B6d0D9817bd9D41b9AfEAc301dBa713B8",
+    "description": "L2 Operator (collects fees) for chain Lens Mainnet",
+    "url": "https://explorer.lens.xyz/address/0x62Ae8d9B6d0D9817bd9D41b9AfEAc301dBa713B8"
+  },
+  {
+    "key": "L2 Operator (collects fees) for Lens Testnet",
+    "value": "https://explorer.testnet.lens.xyz/address/0x1b1677ddc55be9cdfaeab0ec8f418f0bd2a2316d#transfers",
+    "description": "L2 Operator (collects fees) for chain Lens Testnet",
+    "url": "https://explorer.testnet.lens.xyz/address/0x1b1677ddc55be9cdfaeab0ec8f418f0bd2a2316d#transfers"
+  },
+  {
+    "key": "L2 Operator (collects fees) for Sophon Mainnet",
+    "value": "https://explorer.sophon.xyz/address/0xFe4DCD65E80483357dB01BFA0FFafb1178fF4541",
+    "description": "L2 Operator (collects fees) for chain Sophon Mainnet",
+    "url": "https://explorer.sophon.xyz/address/0xFe4DCD65E80483357dB01BFA0FFafb1178fF4541"
+  },
+  {
+    "key": "L2 Operator (collects fees) for Sophon Testnet",
+    "value": "https://testnet.sophscan.xyz/address/0x98546B226dbbA8230cf620635a1e4ab01F6A99B2",
+    "description": "L2 Operator (collects fees) for chain Sophon Testnet",
+    "url": "https://testnet.sophscan.xyz/address/0x98546B226dbbA8230cf620635a1e4ab01F6A99B2"
+  },
+  {
+    "key": "L2 Operator (collects fees) for Wonder Chain Testnet",
+    "value": "https://explorer.sepolia.labs.wonder.fi/address/0xFFFfFC574395c0052Be5d43b9eD49f22233f2445",
+    "description": "L2 Operator (collects fees) for chain Wonder Chain Testnet",
+    "url": "https://explorer.sepolia.labs.wonder.fi/address/0xFFFfFC574395c0052Be5d43b9eD49f22233f2445"
+  },
+  {
+    "key": "L2 Operator (collects fees) for ZKsync Era Mainnet",
+    "value": "https://explorer.zksync.io/address/0xa9232040bf0e0aea2578a5b2243f2916dbfc0a69",
+    "description": "L2 Operator (collects fees) for chain ZKsync Era Mainnet",
+    "url": "https://explorer.zksync.io/address/0xa9232040bf0e0aea2578a5b2243f2916dbfc0a69"
+  },
+  {
+    "key": "L2 Operator (collects fees) for ZKsync Era Sepolia Testnet (Boojnet)",
+    "value": "https://sepolia.explorer.zksync.io/address/0x381b5cbD43F30a88AC2c7D8ed021325443156455#transfers",
+    "description": "L2 Operator (collects fees) for chain ZKsync Era Sepolia Testnet (Boojnet)",
+    "url": "https://sepolia.explorer.zksync.io/address/0x381b5cbD43F30a88AC2c7D8ed021325443156455#transfers"
+  },
+  {
+    "key": "L2 Operator (collects fees) for ZKsync Era Stage Gateway",
+    "value": "https://explorer.era-gateway-stage.zksync.dev/address/0x6E88a132a47FF8Dfa1729c01f8D946a1046105A6#transfers",
+    "description": "L2 Operator (collects fees) for chain ZKsync Era Stage Gateway",
+    "url": "https://explorer.era-gateway-stage.zksync.dev/address/0x6E88a132a47FF8Dfa1729c01f8D946a1046105A6#transfers"
+  },
+  {
+    "key": "L2 Operator (collects fees) for ZKsync Era Stage Validium",
+    "value": "https://explorer.era-stage-validium.zksync.dev/address/0x8fc4cB81975cFE4652630b77E86EF0e4193Aa17e#transfers",
+    "description": "L2 Operator (collects fees) for chain ZKsync Era Stage Validium",
+    "url": "https://explorer.era-stage-validium.zksync.dev/address/0x8fc4cB81975cFE4652630b77E86EF0e4193Aa17e#transfers"
+  },
+  {
+    "key": "L2 Operator (collects fees) for ZKsync Era stage-proofs",
+    "value": "0x133fadc6d5367e20cefe6918c17f3456a5863704",
+    "description": "L2 Operator (collects fees) for chain ZKsync Era stage-proofs",
+    "url": "0x133fadc6d5367e20cefe6918c17f3456a5863704"
+  },
+  {
+    "key": "L2 Operator (collects fees) for ZKsync Gateway Mainnet",
+    "value": "https://gateway.explorer.zksync.io/address/0xc55B48f9be68F0EA79C3103F939EA5966890Ea0b",
+    "description": "L2 Operator (collects fees) for chain ZKsync Gateway Mainnet",
+    "url": "https://gateway.explorer.zksync.io/address/0xc55B48f9be68F0EA79C3103F939EA5966890Ea0b"
+  },
+  {
+    "key": "L2 Operator (collects fees) for ZKsync Gateway Testnet",
+    "value": "0x381b5cbD43F30a88AC2c7D8ed021325443156455",
+    "description": "L2 Operator (collects fees) for chain ZKsync Gateway Testnet",
+    "url": "0x381b5cbD43F30a88AC2c7D8ed021325443156455"
+  },
+  {
+    "key": "L2 Operator (collects fees) for ZKsync OS Stage",
+    "value": "0xfcb433186d10b448321adb41bab5043989b16b95",
+    "description": "L2 Operator (collects fees) for chain ZKsync OS Stage",
+    "url": "0xfcb433186d10b448321adb41bab5043989b16b95"
+  },
+  {
+    "key": "ML Explorer for Abstract Mainnet",
+    "value": "https://explorer.mainnet.abs.xyz/",
+    "description": "ML Explorer for chain Abstract Mainnet",
+    "url": "https://explorer.mainnet.abs.xyz/"
+  },
+  {
+    "key": "ML Explorer for Abstract Testnet",
+    "value": "https://explorer.testnet.abs.xyz/",
+    "description": "ML Explorer for chain Abstract Testnet",
+    "url": "https://explorer.testnet.abs.xyz/"
+  },
+  {
+    "key": "ML Explorer for Lens Mainnet",
+    "value": "https://explorer.lens.xyz/",
+    "description": "ML Explorer for chain Lens Mainnet",
+    "url": "https://explorer.lens.xyz/"
+  },
+  {
+    "key": "ML Explorer for Lens Testnet",
+    "value": "https://explorer.testnet.lens.xyz/",
+    "description": "ML Explorer for chain Lens Testnet",
+    "url": "https://explorer.testnet.lens.xyz/"
+  },
+  {
+    "key": "ML Explorer for Memento Testnet",
+    "value": "https://explorer.memento.zeeve.online/",
+    "description": "ML Explorer for chain Memento Testnet",
+    "url": "https://explorer.memento.zeeve.online/"
+  },
+  {
+    "key": "ML Explorer for Ripio LaChain Mainnet",
+    "value": "https://explorer.zk.lachain.network/",
+    "description": "ML Explorer for chain Ripio LaChain Mainnet",
+    "url": "https://explorer.zk.lachain.network/"
+  },
+  {
+    "key": "ML Explorer for Ripio LaChain Testnet",
+    "value": "https://explorer.zk.lachain.network/?network=TestLaChainZK",
+    "description": "ML Explorer for chain Ripio LaChain Testnet",
+    "url": "https://explorer.zk.lachain.network/?network=TestLaChainZK"
+  },
+  {
+    "key": "ML Explorer for Sophon Mainnet",
+    "value": "https://explorer.sophon.xyz/",
+    "description": "ML Explorer for chain Sophon Mainnet",
+    "url": "https://explorer.sophon.xyz/"
+  },
+  {
+    "key": "ML Explorer for Sophon Testnet",
+    "value": "https://explorer.testnet.sophon.xyz/",
+    "description": "ML Explorer for chain Sophon Testnet",
+    "url": "https://explorer.testnet.sophon.xyz/"
+  },
+  {
+    "key": "ML Explorer for Wonder Chain Testnet",
+    "value": "https://explorer.testnet.wonderchain.org/",
+    "description": "ML Explorer for chain Wonder Chain Testnet",
+    "url": "https://explorer.testnet.wonderchain.org/"
+  },
+  {
+    "key": "ML Explorer for Xsolla Testnet",
+    "value": "https://x.la/explorer",
+    "description": "ML Explorer for chain Xsolla Testnet",
+    "url": "https://x.la/explorer"
+  },
+  {
+    "key": "ML Explorer for Zero Mainnet",
+    "value": "https://zero-explorer.vercel.app/",
+    "description": "ML Explorer for chain Zero Mainnet",
+    "url": "https://zero-explorer.vercel.app/"
+  },
+  {
+    "key": "ML Explorer for Zero Testnet",
+    "value": "https://zero-explorer.vercel.app/?network=zerion_testnet",
+    "description": "ML Explorer for chain Zero Testnet",
+    "url": "https://zero-explorer.vercel.app/?network=zerion_testnet"
+  },
+  {
+    "key": "ML Explorer for zkCandy Mainnet",
+    "value": "https://explorer.zkcandy.io/",
+    "description": "ML Explorer for chain zkCandy Mainnet",
+    "url": "https://explorer.zkcandy.io/"
+  },
+  {
+    "key": "ML Explorer for ZKsync Era Mainnet",
+    "value": "https://explorer.zksync.io/",
+    "description": "ML Explorer for chain ZKsync Era Mainnet",
+    "url": "https://explorer.zksync.io/"
+  },
+  {
+    "key": "ML Explorer for ZKsync Era Sepolia Testnet (Boojnet)",
+    "value": "https://sepolia.explorer.zksync.io/",
+    "description": "ML Explorer for chain ZKsync Era Sepolia Testnet (Boojnet)",
+    "url": "https://sepolia.explorer.zksync.io/"
+  },
+  {
+    "key": "ML Explorer for ZKsync Era Stage Gateway",
+    "value": "https://explorer.era-gateway-stage.zksync.dev",
+    "description": "ML Explorer for chain ZKsync Era Stage Gateway",
+    "url": "https://explorer.era-gateway-stage.zksync.dev"
+  },
+  {
+    "key": "ML Explorer for ZKsync Era Stage Validium",
+    "value": "https://explorer.era-stage-validium.zksync.dev/",
+    "description": "ML Explorer for chain ZKsync Era Stage Validium",
+    "url": "https://explorer.era-stage-validium.zksync.dev/"
+  },
+  {
+    "key": "ML Explorer for ZKsync Era stage-proofs",
+    "value": "https://stage-proofs.staging-scan-v2.zksync.dev",
+    "description": "ML Explorer for chain ZKsync Era stage-proofs",
+    "url": "https://stage-proofs.staging-scan-v2.zksync.dev"
+  },
+  {
+    "key": "ML Explorer for ZKsync Gateway Mainnet",
+    "value": "https://gateway.explorer.zksync.io",
+    "description": "ML Explorer for chain ZKsync Gateway Mainnet",
+    "url": "https://gateway.explorer.zksync.io"
+  },
+  {
+    "key": "ML Explorer for ZKsync Gateway Testnet",
+    "value": "https://sepolia.gateway.explorer.zksync.io",
+    "description": "ML Explorer for chain ZKsync Gateway Testnet",
+    "url": "https://sepolia.gateway.explorer.zksync.io"
+  },
+  {
+    "key": "Portal for Abstract Mainnet",
+    "value": "https://native-bridge.abs.xyz/bridge",
+    "description": "Portal for chain Abstract Mainnet",
+    "url": "https://native-bridge.abs.xyz/bridge"
+  },
+  {
+    "key": "Portal for Abstract Testnet",
+    "value": "https://native-bridge.abs.xyz/bridge?network=abstract-testnet",
+    "description": "Portal for chain Abstract Testnet",
+    "url": "https://native-bridge.abs.xyz/bridge?network=abstract-testnet"
+  },
+  {
+    "key": "Portal for Altava Testnet",
+    "value": "https://bridge.testnet.prometheuz.io/",
+    "description": "Portal for chain Altava Testnet",
+    "url": "https://bridge.testnet.prometheuz.io/"
+  },
+  {
+    "key": "Portal for Creator (Zepeto) Testnet",
+    "value": "https://creator-testnet-portal.vercel.app/bridge",
+    "description": "Portal for chain Creator (Zepeto) Testnet",
+    "url": "https://creator-testnet-portal.vercel.app/bridge"
+  },
+  {
+    "key": "Portal for Cronos Mainnet",
+    "value": "https://zkevm.cronos.org/bridge",
+    "description": "Portal for chain Cronos Mainnet",
+    "url": "https://zkevm.cronos.org/bridge"
+  },
+  {
+    "key": "Portal for Cronos Testnet",
+    "value": "https://zkevm.cronos.org/bridge",
+    "description": "Portal for chain Cronos Testnet",
+    "url": "https://zkevm.cronos.org/bridge"
+  },
+  {
+    "key": "Portal for GenLayer Testnet",
+    "value": "https://genlayer-bridge.vercel.app/bridge",
+    "description": "Portal for chain GenLayer Testnet",
+    "url": "https://genlayer-bridge.vercel.app/bridge"
+  },
+  {
+    "key": "Portal for GRVT Mainnet",
+    "value": "https://grvt.io/exchange/login",
+    "description": "Portal for chain GRVT Mainnet",
+    "url": "https://grvt.io/exchange/login"
+  },
+  {
+    "key": "Portal for GRVT Testnet",
+    "value": "https://grvt.io/exchange/login",
+    "description": "Portal for chain GRVT Testnet",
+    "url": "https://grvt.io/exchange/login"
+  },
+  {
+    "key": "Portal for Lens Testnet",
+    "value": "https://portal.testnet.lens.dev/bridge/",
+    "description": "Portal for chain Lens Testnet",
+    "url": "https://portal.testnet.lens.dev/bridge/"
+  },
+  {
+    "key": "Portal for Memento Testnet",
+    "value": "https://bridge.memento.zeeve.online/",
+    "description": "Portal for chain Memento Testnet",
+    "url": "https://bridge.memento.zeeve.online/"
+  },
+  {
+    "key": "Portal for OpenZK Mainnet",
+    "value": "https://openzk-mainnet-bridge.vercel.app/bridge",
+    "description": "Portal for chain OpenZK Mainnet",
+    "url": "https://openzk-mainnet-bridge.vercel.app/bridge"
+  },
+  {
+    "key": "Portal for OpenZK Testnet",
+    "value": "https://openzk-bridge.vercel.app/bridge",
+    "description": "Portal for chain OpenZK Testnet",
+    "url": "https://openzk-bridge.vercel.app/bridge"
+  },
+  {
+    "key": "Portal for Ripio LaChain Mainnet",
+    "value": "https://bridge.zk.lachain.network/",
+    "description": "Portal for chain Ripio LaChain Mainnet",
+    "url": "https://bridge.zk.lachain.network/"
+  },
+  {
+    "key": "Portal for Ripio LaChain Testnet",
+    "value": "https://bridge.zk.lachain.network/bridge?network=testlachainzk",
+    "description": "Portal for chain Ripio LaChain Testnet",
+    "url": "https://bridge.zk.lachain.network/bridge?network=testlachainzk"
+  },
+  {
+    "key": "Portal for Sophon Mainnet",
+    "value": "https://portal.sophon.xyz/home",
+    "description": "Portal for chain Sophon Mainnet",
+    "url": "https://portal.sophon.xyz/home"
+  },
+  {
+    "key": "Portal for Sophon Testnet",
+    "value": "https://portal.sophon.xyz/home/?network=sophon-testnet",
+    "description": "Portal for chain Sophon Testnet",
+    "url": "https://portal.sophon.xyz/home/?network=sophon-testnet"
+  },
+  {
+    "key": "Portal for Space and Time Testnet",
+    "value": "https://sxt-avail-bridge.vercel.app/bridge",
+    "description": "Portal for chain Space and Time Testnet",
+    "url": "https://sxt-avail-bridge.vercel.app/bridge"
+  },
+  {
+    "key": "Portal for Wonder Chain Testnet",
+    "value": "https://portal.wonderchain.org/bridge",
+    "description": "Portal for chain Wonder Chain Testnet",
+    "url": "https://portal.wonderchain.org/bridge"
+  },
+  {
+    "key": "Portal for XPLA Mainnet",
+    "value": "https://xpla-bridge.vercel.app/bridge",
+    "description": "Portal for chain XPLA Mainnet",
+    "url": "https://xpla-bridge.vercel.app/bridge"
+  },
+  {
+    "key": "Portal for XPLA Testnet",
+    "value": "https://xpla-testnet-bridge.vercel.app/bridge",
+    "description": "Portal for chain XPLA Testnet",
+    "url": "https://xpla-testnet-bridge.vercel.app/bridge"
+  },
+  {
+    "key": "Portal for Xsolla Testnet",
+    "value": "https://x.la/bridge/bridge/",
+    "description": "Portal for chain Xsolla Testnet",
+    "url": "https://x.la/bridge/bridge/"
+  },
+  {
+    "key": "Portal for ZaynZK Testnet",
+    "value": "https://zaynzk-testnet-bridge.vercel.app/bridge",
+    "description": "Portal for chain ZaynZK Testnet",
+    "url": "https://zaynzk-testnet-bridge.vercel.app/bridge"
+  },
+  {
+    "key": "Portal for Zero Mainnet",
+    "value": "https://zerion-bridge.vercel.app/bridge",
+    "description": "Portal for chain Zero Mainnet",
+    "url": "https://zerion-bridge.vercel.app/bridge"
+  },
+  {
+    "key": "Portal for zkCandy Mainnet",
+    "value": "https://bridge.zkcandy.io/bridge",
+    "description": "Portal for chain zkCandy Mainnet",
+    "url": "https://bridge.zkcandy.io/bridge"
+  },
+  {
+    "key": "Portal for ZKsync Era Mainnet",
+    "value": "https://portal.zksync.io/bridge",
+    "description": "Portal for chain ZKsync Era Mainnet",
+    "url": "https://portal.zksync.io/bridge"
+  },
+  {
+    "key": "Portal for ZKsync Era Sepolia Testnet (Boojnet)",
+    "value": "https://portal.zksync.io/bridge/?network=sepolia",
+    "description": "Portal for chain ZKsync Era Sepolia Testnet (Boojnet)",
+    "url": "https://portal.zksync.io/bridge/?network=sepolia"
+  },
+  {
+    "key": "Portal for ZKsync Era Stage Gateway",
+    "value": "https://portal.era-gateway-stage.zksync.dev/bridge/",
+    "description": "Portal for chain ZKsync Era Stage Gateway",
+    "url": "https://portal.era-gateway-stage.zksync.dev/bridge/"
+  },
+  {
+    "key": "Portal for ZKsync Era Stage Validium",
+    "value": "https://portal.era-stage-validium.zksync.dev/bridge",
+    "description": "Portal for chain ZKsync Era Stage Validium",
+    "url": "https://portal.era-stage-validium.zksync.dev/bridge"
+  },
+  {
+    "key": "Portal for ZKsync Gateway Mainnet",
+    "value": "https://portal.era-gateway-mainnet.zksync.dev/bridge",
+    "description": "Portal for chain ZKsync Gateway Mainnet",
+    "url": "https://portal.era-gateway-mainnet.zksync.dev/bridge"
+  },
+  {
+    "key": "Portal for ZKsync Gateway Testnet",
+    "value": "https://portal.era-gateway-testnet.zksync.dev/bridge/",
+    "description": "Portal for chain ZKsync Gateway Testnet",
+    "url": "https://portal.era-gateway-testnet.zksync.dev/bridge/"
+  },
+  {
     "key": "v0.3.0/final_recursion_layer.final.vk.json/bytecode",
     "value": "d0cae4b579ed5fea6432c4ce45cab94e913304796c6bbcd6455d571f28f5e6b6",
     "description": "Bytecode hash for final_recursion_layer.final.vk.json for tag v0.3.0 in zksync-airbender",
