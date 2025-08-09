@@ -299,9 +299,9 @@
         <tr>
           <th style="width: 28%">Key</th>
           <th>Value</th>
+          <th style="width: 100px">Open</th>
           <th style="width: 120px">Info</th>
           <th style="width: 88px; text-align:right">Score</th>
-          <th style="width: 100px">Open</th>
         </tr>
       </thead>
       <tbody id="rows"></tbody>
@@ -523,6 +523,17 @@
         tdVal.innerHTML = highlight(item.value ?? "", valRanges);
         tr.appendChild(tdVal);
 
+        const tdOpen = document.createElement('td');
+        tdOpen.className = "controls";
+        const a = document.createElement('a');
+        a.className = "linkbtn";
+        a.href = item.url || "#";
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.innerHTML = '<span class="dot" aria-hidden="true"></span>Open';
+        tdOpen.appendChild(a);
+        tr.appendChild(tdOpen);
+
         const tdInfo = document.createElement('td');
         tdInfo.className = "controls";
         const infoBtn = document.createElement('button');
@@ -537,17 +548,6 @@
         tdScore.className = "score";
         tdScore.textContent = Math.round(r.score).toString();
         tr.appendChild(tdScore);
-
-        const tdOpen = document.createElement('td');
-        tdOpen.className = "controls";
-        const a = document.createElement('a');
-        a.className = "linkbtn";
-        a.href = item.url || "#";
-        a.target = "_blank";
-        a.rel = "noopener";
-        a.innerHTML = '<span class="dot" aria-hidden="true"></span>Open';
-        tdOpen.appendChild(a);
-        tr.appendChild(tdOpen);
 
         frag.appendChild(tr);
       }
