@@ -1458,6 +1458,156 @@
     "url": "0xfcb433186d10b448321adb41bab5043989b16b95"
   },
   {
+    "key": "mainnet Admin",
+    "value": "0x2cf3bd6a9056b39999f3883955e183f655345063",
+    "description": "Admin contract address",
+    "url": "https://etherscan.io/address/0x2cf3bD6a9056b39999F3883955E183F655345063"
+  },
+  {
+    "key": "mainnet AssetRouter",
+    "value": "0x8829ad80e425c646dab305381ff105169feece56",
+    "description": "Asset Router contract address",
+    "url": "https://etherscan.io/address/0x8829AD80E425C646DAB305381ff105169FeEcE56"
+  },
+  {
+    "key": "mainnet Bridgehub",
+    "value": "0x303a465b659cbb0ab36ee643ea362c509eeb5213",
+    "description": "Bridgehub contract address",
+    "url": "https://etherscan.io/address/0x303a465B659cBB0ab36eE643eA362c509EEb5213"
+  },
+  {
+    "key": "mainnet DiamondProxy - 1217 Space and Time Mainnet",
+    "value": "0x410d7e4ea1093a532ef9a7a2d5df84084b05ec24",
+    "description": "Diamond Proxy for 1217",
+    "url": "https://etherscan.io/address/0x410d7e4ea1093a532ef9a7a2d5df84084b05ec24"
+  },
+  {
+    "key": "mainnet DiamondProxy - 1345 OpenZK Mainnet",
+    "value": "0x89f90748a9a36c30a324481133fa198f4e16a824",
+    "description": "Diamond Proxy for 1345",
+    "url": "https://etherscan.io/address/0x89f90748a9a36c30a324481133fa198f4e16a824"
+  },
+  {
+    "key": "mainnet DiamondProxy - 232 Lens Mainnet",
+    "value": "0xc29d04a93f893700015138e3e334eb828dac3cef",
+    "description": "Diamond Proxy for 232",
+    "url": "https://etherscan.io/address/0xc29d04a93f893700015138e3e334eb828dac3cef"
+  },
+  {
+    "key": "mainnet DiamondProxy - 2741 Abstract Mainnet",
+    "value": "0x2edc71e9991a962c7fe172212d1aa9e50480fbb9",
+    "description": "Diamond Proxy for 2741",
+    "url": "https://etherscan.io/address/0x2edc71e9991a962c7fe172212d1aa9e50480fbb9"
+  },
+  {
+    "key": "mainnet DiamondProxy - 2904 Ripio LaChain Mainnet",
+    "value": "0x742a28e22277945bbaaa34810393bf6e8512576c",
+    "description": "Diamond Proxy for 2904",
+    "url": "https://etherscan.io/address/0x742a28e22277945bbaaa34810393bf6e8512576c"
+  },
+  {
+    "key": "mainnet DiamondProxy - 320 zkCandy Mainnet",
+    "value": "0xf2704433d11842d15aa76bbf0e00407267a99c92",
+    "description": "Diamond Proxy for 320",
+    "url": "https://etherscan.io/address/0xf2704433d11842d15aa76bbf0e00407267a99c92"
+  },
+  {
+    "key": "mainnet DiamondProxy - 324 ZKsync Era Mainnet",
+    "value": "0x32400084c286cf3e17e7b677ea9583e60a000324",
+    "description": "Diamond Proxy for 324",
+    "url": "https://etherscan.io/address/0x32400084c286cf3e17e7b677ea9583e60a000324"
+  },
+  {
+    "key": "mainnet DiamondProxy - 325 GRVT Mainnet",
+    "value": "0xe3e310cd8ee0c808794810ab50fe4bccc5c7d89e",
+    "description": "Diamond Proxy for 325",
+    "url": "https://etherscan.io/address/0xe3e310cd8ee0c808794810ab50fe4bccc5c7d89e"
+  },
+  {
+    "key": "mainnet DiamondProxy - 375 XPLA Mainnet",
+    "value": "0x270bf3978fea60719dd25a400ebe6969bf451493",
+    "description": "Diamond Proxy for 375",
+    "url": "https://etherscan.io/address/0x270bf3978fea60719dd25a400ebe6969bf451493"
+  },
+  {
+    "key": "mainnet DiamondProxy - 388 Cronos Mainnet",
+    "value": "0x7b2da4e77bae0e0d23c53c3be6650497d0576cfc",
+    "description": "Diamond Proxy for 388",
+    "url": "https://etherscan.io/address/0x7b2da4e77bae0e0d23c53c3be6650497d0576cfc"
+  },
+  {
+    "key": "mainnet DiamondProxy - 50104 Sophon Mainnet",
+    "value": "0x05ede6ad1f39b7a16c949d5c33a0658c9c7241e3",
+    "description": "Diamond Proxy for 50104",
+    "url": "https://etherscan.io/address/0x05ede6ad1f39b7a16c949d5c33a0658c9c7241e3"
+  },
+  {
+    "key": "mainnet DiamondProxy - 51888 Memento Mainnet",
+    "value": "0xd231e2fd0dec5993fceae3e504930631876e8c63",
+    "description": "Diamond Proxy for 51888",
+    "url": "https://etherscan.io/address/0xd231e2fd0dec5993fceae3e504930631876e8c63"
+  },
+  {
+    "key": "mainnet DiamondProxy - 543210 Zero Mainnet",
+    "value": "0xdbd849acc6ba61f461cb8a41bbaee2d673ca02d9",
+    "description": "Diamond Proxy for 543210",
+    "url": "https://etherscan.io/address/0xdbd849acc6ba61f461cb8a41bbaee2d673ca02d9"
+  },
+  {
+    "key": "mainnet DiamondProxy - 61166 chain_61166",
+    "value": "0x5e64d248eab336ab3fd0bec0cfe31d4aae32e879",
+    "description": "Diamond Proxy for 61166",
+    "url": "https://etherscan.io/address/0x5e64d248eab336ab3fd0bec0cfe31d4aae32e879"
+  },
+  {
+    "key": "mainnet DiamondProxy - 9075 ZKsync Gateway Mainnet",
+    "value": "0x6e96d1172a6593d5027af3c2664c5112ca75f2b9",
+    "description": "Diamond Proxy for 9075",
+    "url": "https://etherscan.io/address/0x6e96d1172a6593d5027af3c2664c5112ca75f2b9"
+  },
+  {
+    "key": "mainnet DiamondProxy - 9637 chain_9637",
+    "value": "0xc8c4cb5af7c723c7efd360898b47920679f92c92",
+    "description": "Diamond Proxy for 9637",
+    "url": "https://etherscan.io/address/0xc8c4cb5af7c723c7efd360898b47920679f92c92"
+  },
+  {
+    "key": "mainnet gateway Admin",
+    "value": "0x0000000000000000000000000000000000000000",
+    "description": "Admin contract address",
+    "url": "https://etherscan.io/address/0x0000000000000000000000000000000000000000"
+  },
+  {
+    "key": "mainnet gateway AssetRouter",
+    "value": "0x0000000000000000000000000000000000010003",
+    "description": "Asset Router contract address",
+    "url": "https://etherscan.io/address/0x0000000000000000000000000000000000010003"
+  },
+  {
+    "key": "mainnet gateway Bridgehub",
+    "value": "0x0000000000000000000000000000000000010002",
+    "description": "Bridgehub contract address",
+    "url": "https://etherscan.io/address/0x0000000000000000000000000000000000010002"
+  },
+  {
+    "key": "mainnet gateway DiamondProxy - 324 ZKsync Era Mainnet",
+    "value": "0xce7cbd23193d029410b40e0fd8a79a5121f9250c",
+    "description": "Diamond Proxy for 324",
+    "url": "https://etherscan.io/address/0xce7cbd23193d029410b40e0fd8a79a5121f9250c"
+  },
+  {
+    "key": "mainnet gateway SharedBridge",
+    "value": "0x0000000000000000000000000000000000010003",
+    "description": "Shared Bridge contract address",
+    "url": "https://etherscan.io/address/0x0000000000000000000000000000000000010003"
+  },
+  {
+    "key": "mainnet SharedBridge",
+    "value": "0x8829ad80e425c646dab305381ff105169feece56",
+    "description": "Shared Bridge contract address",
+    "url": "https://etherscan.io/address/0x8829AD80E425C646DAB305381ff105169FeEcE56"
+  },
+  {
     "key": "ML Explorer for Abstract Mainnet",
     "value": "https://explorer.mainnet.abs.xyz/",
     "description": "ML Explorer for chain Abstract Mainnet",
@@ -1768,6 +1918,474 @@
     "value": "https://portal.era-gateway-testnet.zksync.dev/bridge/",
     "description": "Portal for chain ZKsync Gateway Testnet",
     "url": "https://portal.era-gateway-testnet.zksync.dev/bridge/"
+  },
+  {
+    "key": "stage Admin",
+    "value": "0xa6ed12b87d2e6ea039d27e1ffbdc24915ffd3042",
+    "description": "Admin contract address",
+    "url": "https://etherscan.io/address/0xa6ED12b87D2e6Ea039d27e1FFbDC24915FFd3042"
+  },
+  {
+    "key": "stage AssetRouter",
+    "value": "0xfd3130ea0e8b7dd61ac3663328a66d97eb02f84b",
+    "description": "Asset Router contract address",
+    "url": "https://etherscan.io/address/0xfD3130Ea0e8B7Dd61Ac3663328a66d97eb02f84b"
+  },
+  {
+    "key": "stage Bridgehub",
+    "value": "0x236d1c3ff32bd0ca26b72af287e895627c0478ce",
+    "description": "Bridgehub contract address",
+    "url": "https://etherscan.io/address/0x236D1c3Ff32Bd0Ca26b72Af287E895627c0478cE"
+  },
+  {
+    "key": "stage DiamondProxy - 11123 chain_11123",
+    "value": "0x6163ecfa45b95d18e15ba5655ae515aab76cb16f",
+    "description": "Diamond Proxy for 11123",
+    "url": "https://etherscan.io/address/0x6163ecfa45b95d18e15ba5655ae515aab76cb16f"
+  },
+  {
+    "key": "stage DiamondProxy - 123 ZKsync Era Stage Gateway",
+    "value": "0xf0ef48fd2ab3b6324e5fbff26b5ed9db12e42eb1",
+    "description": "Diamond Proxy for 123",
+    "url": "https://etherscan.io/address/0xf0ef48fd2ab3b6324e5fbff26b5ed9db12e42eb1"
+  },
+  {
+    "key": "stage DiamondProxy - 1381491 chain_1381491",
+    "value": "0x2a5515f1cebb63c9a3cb66fdac51564756e70b86",
+    "description": "Diamond Proxy for 1381491",
+    "url": "https://etherscan.io/address/0x2a5515f1cebb63c9a3cb66fdac51564756e70b86"
+  },
+  {
+    "key": "stage DiamondProxy - 270 chain_270",
+    "value": "0x6d6e010a2680e2e5a3b097ce411528b36d880ef6",
+    "description": "Diamond Proxy for 270",
+    "url": "https://etherscan.io/address/0x6d6e010a2680e2e5a3b097ce411528b36d880ef6"
+  },
+  {
+    "key": "stage DiamondProxy - 271 chain_271",
+    "value": "0x1ebf16c274dfdcc1339048aff791593d53140f3a",
+    "description": "Diamond Proxy for 271",
+    "url": "https://etherscan.io/address/0x1ebf16c274dfdcc1339048aff791593d53140f3a"
+  },
+  {
+    "key": "stage DiamondProxy - 272 chain_272",
+    "value": "0x18eb8112b3a48da3095aefe54eb01142bf1d9b90",
+    "description": "Diamond Proxy for 272",
+    "url": "https://etherscan.io/address/0x18eb8112b3a48da3095aefe54eb01142bf1d9b90"
+  },
+  {
+    "key": "stage DiamondProxy - 273 chain_273",
+    "value": "0xd4ba5ac16568ec9f11b516d7527c4147a33e1253",
+    "description": "Diamond Proxy for 273",
+    "url": "https://etherscan.io/address/0xd4ba5ac16568ec9f11b516d7527c4147a33e1253"
+  },
+  {
+    "key": "stage DiamondProxy - 275 chain_275",
+    "value": "0xe2b8ec657af182e33d0535f7c3c01730df843c93",
+    "description": "Diamond Proxy for 275",
+    "url": "https://etherscan.io/address/0xe2b8ec657af182e33d0535f7c3c01730df843c93"
+  },
+  {
+    "key": "stage DiamondProxy - 276 chain_276",
+    "value": "0xc1e6fa0cf02168d43761588996f8ef4a0c242952",
+    "description": "Diamond Proxy for 276",
+    "url": "https://etherscan.io/address/0xc1e6fa0cf02168d43761588996f8ef4a0c242952"
+  },
+  {
+    "key": "stage DiamondProxy - 277 chain_277",
+    "value": "0x1340c55fd14dafc1ca7303c90e40bc2c92c76eee",
+    "description": "Diamond Proxy for 277",
+    "url": "https://etherscan.io/address/0x1340c55fd14dafc1ca7303c90e40bc2c92c76eee"
+  },
+  {
+    "key": "stage DiamondProxy - 278 chain_278",
+    "value": "0xce2c6053b900149cda062d135688de07b7c1d50f",
+    "description": "Diamond Proxy for 278",
+    "url": "https://etherscan.io/address/0xce2c6053b900149cda062d135688de07b7c1d50f"
+  },
+  {
+    "key": "stage DiamondProxy - 299 chain_299",
+    "value": "0xb0cf684553f1b0048d1de3ff3eb802e0b70271c5",
+    "description": "Diamond Proxy for 299",
+    "url": "https://etherscan.io/address/0xb0cf684553f1b0048d1de3ff3eb802e0b70271c5"
+  },
+  {
+    "key": "stage DiamondProxy - 333 chain_333",
+    "value": "0xa669a3ca3d13d014edfc6945ba7a98c6d5a054e0",
+    "description": "Diamond Proxy for 333",
+    "url": "https://etherscan.io/address/0xa669a3ca3d13d014edfc6945ba7a98c6d5a054e0"
+  },
+  {
+    "key": "stage DiamondProxy - 334 chain_334",
+    "value": "0xfd93dde6b102ee3d3e3499f52b72a00ac0c7a317",
+    "description": "Diamond Proxy for 334",
+    "url": "https://etherscan.io/address/0xfd93dde6b102ee3d3e3499f52b72a00ac0c7a317"
+  },
+  {
+    "key": "stage DiamondProxy - 335 chain_335",
+    "value": "0x6394b52e8ef3d54ec9ecdd5b38e59ecbd39ecb7b",
+    "description": "Diamond Proxy for 335",
+    "url": "https://etherscan.io/address/0x6394b52e8ef3d54ec9ecdd5b38e59ecbd39ecb7b"
+  },
+  {
+    "key": "stage DiamondProxy - 37111 Lens Testnet",
+    "value": "0x9cff734c0529e89e2294b592d9f4d310754ec8ca",
+    "description": "Diamond Proxy for 37111",
+    "url": "https://etherscan.io/address/0x9cff734c0529e89e2294b592d9f4d310754ec8ca"
+  },
+  {
+    "key": "stage DiamondProxy - 399 chain_399",
+    "value": "0x188a10e7f1f59abf28e9dddca8af6f8908fc4436",
+    "description": "Diamond Proxy for 399",
+    "url": "https://etherscan.io/address/0x188a10e7f1f59abf28e9dddca8af6f8908fc4436"
+  },
+  {
+    "key": "stage DiamondProxy - 499 ZKsync Era stage-proofs",
+    "value": "0x35360f304599cd6479978e2734f37b57ad6f1696",
+    "description": "Diamond Proxy for 499",
+    "url": "https://etherscan.io/address/0x35360f304599cd6479978e2734f37b57ad6f1696"
+  },
+  {
+    "key": "stage DiamondProxy - 6474 chain_6474",
+    "value": "0x02462560a3e102741bd675488528993a3a049492",
+    "description": "Diamond Proxy for 6474",
+    "url": "https://etherscan.io/address/0x02462560a3e102741bd675488528993a3a049492"
+  },
+  {
+    "key": "stage DiamondProxy - 6475 ZKsync Era Stage Validium",
+    "value": "0x496a9bcdd27b50ba355fc6d7183f3cdbccc06a51",
+    "description": "Diamond Proxy for 6475",
+    "url": "https://etherscan.io/address/0x496a9bcdd27b50ba355fc6d7183f3cdbccc06a51"
+  },
+  {
+    "key": "stage gateway Admin",
+    "value": "0x0000000000000000000000000000000000000000",
+    "description": "Admin contract address",
+    "url": "https://etherscan.io/address/0x0000000000000000000000000000000000000000"
+  },
+  {
+    "key": "stage gateway AssetRouter",
+    "value": "0x0000000000000000000000000000000000010003",
+    "description": "Asset Router contract address",
+    "url": "https://etherscan.io/address/0x0000000000000000000000000000000000010003"
+  },
+  {
+    "key": "stage gateway Bridgehub",
+    "value": "0x0000000000000000000000000000000000010002",
+    "description": "Bridgehub contract address",
+    "url": "https://etherscan.io/address/0x0000000000000000000000000000000000010002"
+  },
+  {
+    "key": "stage gateway DiamondProxy - 270 chain_270",
+    "value": "0x656d10b04e5a2cfeee6d6028233a22c0bf519af1",
+    "description": "Diamond Proxy for 270",
+    "url": "https://etherscan.io/address/0x656d10b04e5a2cfeee6d6028233a22c0bf519af1"
+  },
+  {
+    "key": "stage gateway DiamondProxy - 37111 Lens Testnet",
+    "value": "0x0762a97c499ec1544e3e3a4fbdd58abf2149fb54",
+    "description": "Diamond Proxy for 37111",
+    "url": "https://etherscan.io/address/0x0762a97c499ec1544e3e3a4fbdd58abf2149fb54"
+  },
+  {
+    "key": "stage gateway DiamondProxy - 499 ZKsync Era stage-proofs",
+    "value": "0x4833377fcbd8a35e5312b719e685d27e1df84334",
+    "description": "Diamond Proxy for 499",
+    "url": "https://etherscan.io/address/0x4833377fcbd8a35e5312b719e685d27e1df84334"
+  },
+  {
+    "key": "stage gateway DiamondProxy - 6475 ZKsync Era Stage Validium",
+    "value": "0xbe2e3012c1cbcb9f199fbdeb8b92942b7c69dfca",
+    "description": "Diamond Proxy for 6475",
+    "url": "https://etherscan.io/address/0xbe2e3012c1cbcb9f199fbdeb8b92942b7c69dfca"
+  },
+  {
+    "key": "stage gateway SharedBridge",
+    "value": "0x0000000000000000000000000000000000010003",
+    "description": "Shared Bridge contract address",
+    "url": "https://etherscan.io/address/0x0000000000000000000000000000000000010003"
+  },
+  {
+    "key": "stage SharedBridge",
+    "value": "0xfd3130ea0e8b7dd61ac3663328a66d97eb02f84b",
+    "description": "Shared Bridge contract address",
+    "url": "https://etherscan.io/address/0xfD3130Ea0e8B7Dd61Ac3663328a66d97eb02f84b"
+  },
+  {
+    "key": "testnet Admin",
+    "value": "0x1112c822c6e05399cb526509564449fdb6d4de14",
+    "description": "Admin contract address",
+    "url": "https://etherscan.io/address/0x1112c822C6E05399cb526509564449FDb6D4De14"
+  },
+  {
+    "key": "testnet AssetRouter",
+    "value": "0xf2a49545c5b1a85d2fb018cc39103661639a9b06",
+    "description": "Asset Router contract address",
+    "url": "https://etherscan.io/address/0xF2a49545C5B1A85d2fB018cC39103661639a9B06"
+  },
+  {
+    "key": "testnet Bridgehub",
+    "value": "0x35a54c8c757806eb6820629bc82d90e056394c92",
+    "description": "Bridgehub contract address",
+    "url": "https://etherscan.io/address/0x35A54c8C757806eB6820629bc82d90E056394C92"
+  },
+  {
+    "key": "testnet DiamondProxy - 1025 chain_1025",
+    "value": "0xa62cd247adf57cddc12f8c7101c42c6838347d59",
+    "description": "Diamond Proxy for 1025",
+    "url": "https://etherscan.io/address/0xa62cd247adf57cddc12f8c7101c42c6838347d59"
+  },
+  {
+    "key": "testnet DiamondProxy - 11124 Abstract Testnet",
+    "value": "0x8ad52ff836a30f063df51a00c99518880b8b36ac",
+    "description": "Diamond Proxy for 11124",
+    "url": "https://etherscan.io/address/0x8ad52ff836a30f063df51a00c99518880b8b36ac"
+  },
+  {
+    "key": "testnet DiamondProxy - 1282 Cronos Dev Testnet",
+    "value": "0x1c9709c80d95667e6cce7c3619ac2ff18a4edf17",
+    "description": "Diamond Proxy for 1282",
+    "url": "https://etherscan.io/address/0x1c9709c80d95667e6cce7c3619ac2ff18a4edf17"
+  },
+  {
+    "key": "testnet DiamondProxy - 14183 Ripio LaChain Testnet",
+    "value": "0x431c51cc2b9cbdbf7d7954e2c9e8afcb9b7bb00a",
+    "description": "Diamond Proxy for 14183",
+    "url": "https://etherscan.io/address/0x431c51cc2b9cbdbf7d7954e2c9e8afcb9b7bb00a"
+  },
+  {
+    "key": "testnet DiamondProxy - 19110 chain_19110",
+    "value": "0xbd4f6df047be618b2794912d17140c7ce2190591",
+    "description": "Diamond Proxy for 19110",
+    "url": "https://etherscan.io/address/0xbd4f6df047be618b2794912d17140c7ce2190591"
+  },
+  {
+    "key": "testnet DiamondProxy - 2027 chain_2027",
+    "value": "0xa06eec1d26c4ab116807f8629245eba26ed3c143",
+    "description": "Diamond Proxy for 2027",
+    "url": "https://etherscan.io/address/0xa06eec1d26c4ab116807f8629245eba26ed3c143"
+  },
+  {
+    "key": "testnet DiamondProxy - 207788 Heurist Testnet",
+    "value": "0xe64cd8345bd8618d7215f051bc8bce82ed4e71fd",
+    "description": "Diamond Proxy for 207788",
+    "url": "https://etherscan.io/address/0xe64cd8345bd8618d7215f051bc8bce82ed4e71fd"
+  },
+  {
+    "key": "testnet DiamondProxy - 212000 Space and Time Testnet",
+    "value": "0x6379f2acba07983a2ebb580fb69785065cd04d7c",
+    "description": "Diamond Proxy for 212000",
+    "url": "https://etherscan.io/address/0x6379f2acba07983a2ebb580fb69785065cd04d7c"
+  },
+  {
+    "key": "testnet DiamondProxy - 2127 Zeeve Testnet",
+    "value": "0xe1e21058a2f1207d624856d38c8a36267ac1098b",
+    "description": "Diamond Proxy for 2127",
+    "url": "https://etherscan.io/address/0xe1e21058a2f1207d624856d38c8a36267ac1098b"
+  },
+  {
+    "key": "testnet DiamondProxy - 2129 Memento Testnet",
+    "value": "0x82d2774550b9e37d64d1cf56b17eb8ab1cfe7111",
+    "description": "Diamond Proxy for 2129",
+    "url": "https://etherscan.io/address/0x82d2774550b9e37d64d1cf56b17eb8ab1cfe7111"
+  },
+  {
+    "key": "testnet DiamondProxy - 240 Cronos Testnet",
+    "value": "0xa3062ab8d613489d8ba5303123240f7e8e98483a",
+    "description": "Diamond Proxy for 240",
+    "url": "https://etherscan.io/address/0xa3062ab8d613489d8ba5303123240f7e8e98483a"
+  },
+  {
+    "key": "testnet DiamondProxy - 300 ZKsync Era Sepolia Testnet (Boojnet)",
+    "value": "0x9a6de0f62aa270a8bcb1e2610078650d539b1ef9",
+    "description": "Diamond Proxy for 300",
+    "url": "https://etherscan.io/address/0x9a6de0f62aa270a8bcb1e2610078650d539b1ef9"
+  },
+  {
+    "key": "testnet DiamondProxy - 302 chain_302",
+    "value": "0x0a564909d89edaed5df7860c58588b3d0fb8102f",
+    "description": "Diamond Proxy for 302",
+    "url": "https://etherscan.io/address/0x0a564909d89edaed5df7860c58588b3d0fb8102f"
+  },
+  {
+    "key": "testnet DiamondProxy - 326 GRVT Testnet",
+    "value": "0x0e4bd2e8d953a0234fb1122ffb848b49522308ec",
+    "description": "Diamond Proxy for 326",
+    "url": "https://etherscan.io/address/0x0e4bd2e8d953a0234fb1122ffb848b49522308ec"
+  },
+  {
+    "key": "testnet DiamondProxy - 32657 ZKsync Gateway Testnet",
+    "value": "0xffdbb7b7f35a8b81618f64d95bcc878297759744",
+    "description": "Diamond Proxy for 32657",
+    "url": "https://etherscan.io/address/0xffdbb7b7f35a8b81618f64d95bcc878297759744"
+  },
+  {
+    "key": "testnet DiamondProxy - 327 chain_327",
+    "value": "0xb484a3f98bcbaaf50d66292463203c0247b4f3f6",
+    "description": "Diamond Proxy for 327",
+    "url": "https://etherscan.io/address/0xb484a3f98bcbaaf50d66292463203c0247b4f3f6"
+  },
+  {
+    "key": "testnet DiamondProxy - 4221 GenLayer Testnet",
+    "value": "0x1e31cf28b3a56e4384639e1d0e494b4a55db3a90",
+    "description": "Diamond Proxy for 4221",
+    "url": "https://etherscan.io/address/0x1e31cf28b3a56e4384639e1d0e494b4a55db3a90"
+  },
+  {
+    "key": "testnet DiamondProxy - 43210 Zero Testnet",
+    "value": "0x0581fcc94cf030772412890aeeccdf748a2f9440",
+    "description": "Diamond Proxy for 43210",
+    "url": "https://etherscan.io/address/0x0581fcc94cf030772412890aeeccdf748a2f9440"
+  },
+  {
+    "key": "testnet DiamondProxy - 444 chain_444",
+    "value": "0x2f45fc02ec23e6d335fde7b5a5083f053c8c2ad3",
+    "description": "Diamond Proxy for 444",
+    "url": "https://etherscan.io/address/0x2f45fc02ec23e6d335fde7b5a5083f053c8c2ad3"
+  },
+  {
+    "key": "testnet DiamondProxy - 4654 Creator (Zepeto) Testnet",
+    "value": "0xffcd95ba30a34de44beda62ad8aaef75f4b72be1",
+    "description": "Diamond Proxy for 4654",
+    "url": "https://etherscan.io/address/0xffcd95ba30a34de44beda62ad8aaef75f4b72be1"
+  },
+  {
+    "key": "testnet DiamondProxy - 4681 OpenZK Testnet",
+    "value": "0x8cc040cc8202dee02765885c3285bd8b89fd3587",
+    "description": "Diamond Proxy for 4681",
+    "url": "https://etherscan.io/address/0x8cc040cc8202dee02765885c3285bd8b89fd3587"
+  },
+  {
+    "key": "testnet DiamondProxy - 475 XPLA Testnet",
+    "value": "0xb0b0a130a9e28749ffa9f5df097d01153b49c07e",
+    "description": "Diamond Proxy for 475",
+    "url": "https://etherscan.io/address/0xb0b0a130a9e28749ffa9f5df097d01153b49c07e"
+  },
+  {
+    "key": "testnet DiamondProxy - 531050104 Sophon Testnet",
+    "value": "0xdd02368f378eed3779b358d2020a77e4d022236d",
+    "description": "Diamond Proxy for 531050104",
+    "url": "https://etherscan.io/address/0xdd02368f378eed3779b358d2020a77e4d022236d"
+  },
+  {
+    "key": "testnet DiamondProxy - 555776 Xsolla Dev Testnet",
+    "value": "0x6df18faf550247dbdbbd722458c4bcf9e2caa25d",
+    "description": "Diamond Proxy for 555776",
+    "url": "https://etherscan.io/address/0x6df18faf550247dbdbbd722458c4bcf9e2caa25d"
+  },
+  {
+    "key": "testnet DiamondProxy - 555777 chain_555777",
+    "value": "0x053a1e901bce5bb1488dc11b1406e13826fcbf55",
+    "description": "Diamond Proxy for 555777",
+    "url": "https://etherscan.io/address/0x053a1e901bce5bb1488dc11b1406e13826fcbf55"
+  },
+  {
+    "key": "testnet DiamondProxy - 642091 chain_642091",
+    "value": "0xd911cfad0c4a9cd8615513c055d2d28250b715d4",
+    "description": "Diamond Proxy for 642091",
+    "url": "https://etherscan.io/address/0xd911cfad0c4a9cd8615513c055d2d28250b715d4"
+  },
+  {
+    "key": "testnet DiamondProxy - 677354 chain_677354",
+    "value": "0xe7d444a5190878e9f0d2d1322b919a874d94d82d",
+    "description": "Diamond Proxy for 677354",
+    "url": "https://etherscan.io/address/0xe7d444a5190878e9f0d2d1322b919a874d94d82d"
+  },
+  {
+    "key": "testnet DiamondProxy - 8153 chain_8153",
+    "value": "0xafaeb2b25c35ef4bf8a7e4631520e43a272c2eb5",
+    "description": "Diamond Proxy for 8153",
+    "url": "https://etherscan.io/address/0xafaeb2b25c35ef4bf8a7e4631520e43a272c2eb5"
+  },
+  {
+    "key": "testnet DiamondProxy - 9296 ZaynZK Testnet",
+    "value": "0x029d824d5de9a8a69631a88bf4be7a2859daee0a",
+    "description": "Diamond Proxy for 9296",
+    "url": "https://etherscan.io/address/0x029d824d5de9a8a69631a88bf4be7a2859daee0a"
+  },
+  {
+    "key": "testnet DiamondProxy - 96371 Wonder Chain Testnet",
+    "value": "0xd4676ab94ea054d633fac05b0fbe309b73c48db5",
+    "description": "Diamond Proxy for 96371",
+    "url": "https://etherscan.io/address/0xd4676ab94ea054d633fac05b0fbe309b73c48db5"
+  },
+  {
+    "key": "testnet DiamondProxy - 978658 chain_978658",
+    "value": "0x649e64d2d12a1f2bbc8bd244b26fbad600a64278",
+    "description": "Diamond Proxy for 978658",
+    "url": "https://etherscan.io/address/0x649e64d2d12a1f2bbc8bd244b26fbad600a64278"
+  },
+  {
+    "key": "testnet gateway Admin",
+    "value": "0x0000000000000000000000000000000000000000",
+    "description": "Admin contract address",
+    "url": "https://etherscan.io/address/0x0000000000000000000000000000000000000000"
+  },
+  {
+    "key": "testnet gateway AssetRouter",
+    "value": "0x0000000000000000000000000000000000010003",
+    "description": "Asset Router contract address",
+    "url": "https://etherscan.io/address/0x0000000000000000000000000000000000010003"
+  },
+  {
+    "key": "testnet gateway Bridgehub",
+    "value": "0x0000000000000000000000000000000000010002",
+    "description": "Bridgehub contract address",
+    "url": "https://etherscan.io/address/0x0000000000000000000000000000000000010002"
+  },
+  {
+    "key": "testnet gateway DiamondProxy - 11124 Abstract Testnet",
+    "value": "0xd72bbef506d40551876ab6bb7d0f044dabb38748",
+    "description": "Diamond Proxy for 11124",
+    "url": "https://etherscan.io/address/0xd72bbef506d40551876ab6bb7d0f044dabb38748"
+  },
+  {
+    "key": "testnet gateway DiamondProxy - 14183 Ripio LaChain Testnet",
+    "value": "0xb639de933d75499fae2e2d4e8cabfdedbeb37513",
+    "description": "Diamond Proxy for 14183",
+    "url": "https://etherscan.io/address/0xb639de933d75499fae2e2d4e8cabfdedbeb37513"
+  },
+  {
+    "key": "testnet gateway DiamondProxy - 300 ZKsync Era Sepolia Testnet (Boojnet)",
+    "value": "0x939f73bfd6809a9650adb2707e44cc0f8ab0874f",
+    "description": "Diamond Proxy for 300",
+    "url": "https://etherscan.io/address/0x939f73bfd6809a9650adb2707e44cc0f8ab0874f"
+  },
+  {
+    "key": "testnet gateway DiamondProxy - 326 GRVT Testnet",
+    "value": "0xb72c9012952f2a2aeaca4aa418fc5f964b74316b",
+    "description": "Diamond Proxy for 326",
+    "url": "https://etherscan.io/address/0xb72c9012952f2a2aeaca4aa418fc5f964b74316b"
+  },
+  {
+    "key": "testnet gateway DiamondProxy - 327 chain_327",
+    "value": "0x849f1f6448145cc3a228e62902ebf9d42ec8d42c",
+    "description": "Diamond Proxy for 327",
+    "url": "https://etherscan.io/address/0x849f1f6448145cc3a228e62902ebf9d42ec8d42c"
+  },
+  {
+    "key": "testnet gateway DiamondProxy - 531050104 Sophon Testnet",
+    "value": "0xdcd487b9cead0505ae5df2d2ef9bd83e8d8a98f4",
+    "description": "Diamond Proxy for 531050104",
+    "url": "https://etherscan.io/address/0xdcd487b9cead0505ae5df2d2ef9bd83e8d8a98f4"
+  },
+  {
+    "key": "testnet gateway DiamondProxy - 96371 Wonder Chain Testnet",
+    "value": "0xc24099b10339dde73fb52a93d4793b7a9cec12f0",
+    "description": "Diamond Proxy for 96371",
+    "url": "https://etherscan.io/address/0xc24099b10339dde73fb52a93d4793b7a9cec12f0"
+  },
+  {
+    "key": "testnet gateway SharedBridge",
+    "value": "0x0000000000000000000000000000000000010003",
+    "description": "Shared Bridge contract address",
+    "url": "https://etherscan.io/address/0x0000000000000000000000000000000000010003"
+  },
+  {
+    "key": "testnet SharedBridge",
+    "value": "0xf2a49545c5b1a85d2fb018cc39103661639a9b06",
+    "description": "Shared Bridge contract address",
+    "url": "https://etherscan.io/address/0xF2a49545C5B1A85d2fB018cC39103661639a9B06"
   },
   {
     "key": "v0.3.0/final_recursion_layer.final.vk.json/bytecode",

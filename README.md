@@ -16,8 +16,10 @@ Things to have:
 
 [] - comined (SNARK) airbender + boojum verification
 
-[] - contract addresses 
+[x] - contract addresses 
 
-[] - chain ids
+[X] - chain ids
 
-[] - urls to things 
+[X] - urls to things 
+
+[] - search box to treat each word separately (fuzzy)
