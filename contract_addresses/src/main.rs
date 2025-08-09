@@ -33,6 +33,7 @@ struct Ecosystem {
     name: String,
     rpc: String,
     bridgehub: Address,
+    explorer_prefix: String,
 }
 
 impl Default for Config {
@@ -67,6 +68,7 @@ async fn fetch_bridgehub_chains(
     rpc_url: &str,
     ecosystem: &str,
     bridgehub: Address,
+    explorer_prefix: &str,
     chain_mapping: &HashMap<String, String>,
 ) -> Result<HashMap<String, OutputItem>> {
     let provider = ProviderBuilder::new().on_http(rpc_url.parse()?);
@@ -104,7 +106,7 @@ async fn fetch_bridgehub_chains(
                 ),
                 OutputItem {
                     value: item.zk_chain_address.clone(),
-                    url: format!("https://etherscan.io/address/{}", item.zk_chain_address),
+                    url: format!("{}{}", explorer_prefix, item.zk_chain_address),
                     description: format!("Diamond Proxy for {}", item.chain_id),
                 },
             )
@@ -116,7 +118,7 @@ async fn fetch_bridgehub_chains(
         format!("{} Bridgehub", ecosystem),
         OutputItem {
             value: format!("0x{:x}", bridgehub),
-            url: format!("https://etherscan.io/address/{}", bridgehub),
+            url: format!("{}{}", explorer_prefix, bridgehub),
             description: "Bridgehub contract address".to_string(),
         },
     );
@@ -125,7 +127,7 @@ async fn fetch_bridgehub_chains(
         format!("{} SharedBridge", ecosystem),
         OutputItem {
             value: format!("0x{:x}", shared_bridge._0),
-            url: format!("https://etherscan.io/address/{}", shared_bridge._0),
+            url: format!("{}{}", explorer_prefix, shared_bridge._0),
             description: "Shared Bridge contract address".to_string(),
         },
     );
@@ -135,7 +137,7 @@ async fn fetch_bridgehub_chains(
         format!("{} Admin", ecosystem),
         OutputItem {
             value: format!("0x{:x}", admin._0),
-            url: format!("https://etherscan.io/address/{}", admin._0),
+            url: format!("{}{}", explorer_prefix, admin._0),
             description: "Admin contract address".to_string(),
         },
     );
@@ -199,31 +201,37 @@ async fn main() -> Result<()> {
             rpc: "https://rpc.era-gateway-stage.zksync.dev/".into(),
             bridgehub: Address::from_str("0x0000000000000000000000000000000000010002").unwrap(),
             name: "stage gateway".into(),
+            explorer_prefix: "https://explorer.era-gateway-stage.zksync.dev/address/".into(),
         },
         Ecosystem {
             rpc: "https://rpc.era-gateway-testnet.zksync.dev/".into(),
             bridgehub: Address::from_str("0x0000000000000000000000000000000000010002").unwrap(),
             name: "testnet gateway".into(),
+            explorer_prefix: "https://explorer.era-gateway-testnet.zksync.dev/address/".into(),
         },
         Ecosystem {
             rpc: "https://rpc.era-gateway-mainnet.zksync.dev/".into(),
             bridgehub: Address::from_str("0x0000000000000000000000000000000000010002").unwrap(),
             name: "mainnet gateway".into(),
+            explorer_prefix: "https://explorer.era-gateway-mainnet.zksync.dev/address/".into(),
         },
         Ecosystem {
             rpc: "https://ethereum-sepolia-rpc.publicnode.com".into(),
             bridgehub: Address::from_str("0x236D1c3Ff32Bd0Ca26b72Af287E895627c0478cE").unwrap(),
             name: "stage".into(),
+            explorer_prefix: "https://sepolia.etherscan.io/address/".into(),
         },
         Ecosystem {
             rpc: "https://ethereum-sepolia-rpc.publicnode.com".into(),
             bridgehub: Address::from_str("0x35A54c8C757806eB6820629bc82d90E056394C92").unwrap(),
             name: "testnet".into(),
+            explorer_prefix: "https://sepolia.etherscan.io/address/".into(),
         },
         Ecosystem {
             rpc: "https://ethereum.publicnode.com".into(),
             bridgehub: Address::from_str("0x303a465B659cBB0ab36eE643eA362c509EEb5213").unwrap(),
             name: "mainnet".into(),
+            explorer_prefix: "https://etherscan.io/address/".into(),
         },
     ];
 
@@ -231,8 +239,14 @@ async fn main() -> Result<()> {
 
     for cfg in configs {
         println!("Processing {}", cfg.name);
-        let chain_items =
-            fetch_bridgehub_chains(&cfg.rpc, &cfg.name, cfg.bridgehub, &chain_mapping).await?;
+        let chain_items = fetch_bridgehub_chains(
+            &cfg.rpc,
+            &cfg.name,
+            cfg.bridgehub,
+            &cfg.explorer_prefix,
+            &chain_mapping,
+        )
+        .await?;
         all_items.extend(chain_items);
     }
 
