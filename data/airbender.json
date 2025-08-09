@@ -1,7 +1,7 @@
 {
   "source": "matter-labs/zksync-airbender/tools/verifier",
-  "fetched_at": "2025-08-09T09:40:46.771898Z",
-  "tags": {
+  "fetched_at": "2025-08-09T09:59:02.337180Z",
+  "items": {
     "v0.3.0/final_recursion_layer.final.vk.json/bytecode": "d0cae4b579ed5fea6432c4ce45cab94e913304796c6bbcd6455d571f28f5e6b6",
     "v0.3.0/final_recursion_layer.final.vk.json/params": "f02e7b90721aea53afbaf88bfc96514d92f67321f12ccebebaed7b2d95600a33",
     "v0.3.0/recursion_layer.reduced.vk.json/bytecode": "c5cc9ac5c7e40c202e280f9ceed74814d4adada87c37a24adf4ca9af1e1defb6",

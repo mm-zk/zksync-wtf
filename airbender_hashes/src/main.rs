@@ -61,7 +61,7 @@ struct GhContentItem {
 struct Output {
     source: String,
     fetched_at: chrono::DateTime<chrono::Utc>,
-    tags: BTreeMap<String, String>,
+    items: BTreeMap<String, String>,
 }
 
 #[tokio::main]
@@ -149,7 +149,7 @@ async fn main() -> Result<()> {
     let out = Output {
         source: format!("{}/{}/{}", cfg.owner, cfg.repo, cfg.subpath),
         fetched_at: Utc::now(),
-        tags: sorted,
+        items: sorted,
     };
 
     if let Some(parent) = cfg.out_path.parent() {
