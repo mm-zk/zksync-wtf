@@ -1,326 +1,601 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>zksync-wtf — instant lookup</title>
+  <title>zksync-wtf — search</title>
   <style>
     :root {
-      --bg: 248 248 250;          /* light */
-      --fg: 20 23 28;
-      --muted: 105 112 125;
-      --accent: 88 101 242;       /* zksync-ish violet */
-      --accent-2: 45 212 191;     /* mint */
-      --card: 255 255 255;
-      --ring: 0 0 0 / 0.08;
-      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --bg: #0b0d12;
+      --muted-bg: #11141b;
+      --fg: #e9edf1;
+      --fg-dim: #b8c0cc;
+      --accent: #7cd2ff;
+      --accent-2: #9d7cff;
+      --border: #1c2230;
+      --good: #40c463;
+      --warn: #ffcc66;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
     }
-    @media (prefers-color-scheme: dark) {
+
+    @media (prefers-color-scheme: light) {
       :root {
-        --bg: 14 16 20;
-        --fg: 234 236 240;
-        --muted: 151 156 169;
-        --accent: 145 130 255;
-        --accent-2: 34 197 190;
-        --card: 22 24 31;
-        --ring: 255 255 255 / 0.1;
-        --shadow: 0 10px 30px rgba(0,0,0,.35);
+        --bg: #f7f8fb;
+        --muted-bg: #ffffff;
+        --fg: #111418;
+        --fg-dim: #384252;
+        --accent: #2563eb;
+        --accent-2: #7c3aed;
+        --border: #e5e7eb;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       }
     }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
     body {
-      margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Noto Sans, Helvetica, Arial, sans-serif;
-      color: rgb(var(--fg));
-      background: radial-gradient(1200px 600px at 10% 0%, rgba(145,130,255,.12), transparent 60%),
-                  radial-gradient(900px 500px at 100% 10%, rgba(34,197,190,.12), transparent 50%),
-                  rgb(var(--bg));
-      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+      height: 100%
     }
+
+    body {
+      margin: 0;
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(124, 210, 255, 0.12), transparent),
+        radial-gradient(1000px 600px at 120% 0%, rgba(157, 124, 255, 0.10), transparent),
+        var(--bg);
+      color: var(--fg);
+      font: 16px/1.45 system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      padding: 28px 18px 60px;
+    }
+
     .wrap {
-      max-width: 980px; margin: 0 auto; padding: 28px 18px 56px;
+      max-width: 1100px;
+      margin: 0 auto;
     }
-    header { display:flex; align-items:center; gap:14px; margin-bottom: 18px; }
-    .logo {
-      width: 40px; height: 40px; display:grid; place-items:center; border-radius: 12px;
-      background: linear-gradient(135deg, rgba(145,130,255,.3), rgba(34,197,190,.3));
+
+    header {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      margin: 0;
+      font-size: clamp(22px, 4vw, 32px);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .tag {
+      font-size: 12px;
+      color: var(--fg-dim);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.04));
+    }
+
+    .searchbar {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: var(--muted-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      box-shadow: var(--shadow);
+      gap: 10px;
+    }
+
+    .searchbar input {
+      width: 100%;
+      font: inherit;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: var(--fg);
+      padding: 8px 6px;
+    }
+
+    .kbd {
+      font-size: 12px;
+      color: var(--fg-dim);
+      border: 1px solid var(--border);
+      border-bottom-width: 2px;
+      border-radius: 8px;
+      padding: 2px 6px;
+    }
+
+    .hint {
+      font-size: 13px;
+      color: var(--fg-dim);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: var(--muted-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
       box-shadow: var(--shadow);
     }
-    .logo svg { width: 22px; height: 22px; }
-    h1 { font-size: clamp(20px, 4vw, 28px); margin: 0; letter-spacing: .2px; }
-    .sub { color: rgb(var(--muted)); font-size: 14px; margin-top: 2px; }
 
-    .search {
-      position: sticky; top: 0; z-index: 10; padding-top: 6px; padding-bottom: 10px;
-      backdrop-filter: blur(6px);
-      background: linear-gradient(to bottom, rgba(255,255,255,.5), rgba(255,255,255,0))
-                  ,transparent;
+    thead th {
+      text-align: left;
+      font-weight: 650;
+      font-size: 13px;
+      color: var(--fg-dim);
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.02));
     }
-    @media (prefers-color-scheme: dark) {
-      .search { background: linear-gradient(to bottom, rgba(0,0,0,.35), transparent); }
+
+    tbody td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      word-break: break-word;
     }
-    .input-shell {
-      display:flex; align-items:center; gap:10px; width: 100%;
-      background: rgba(255,255,255,.7);
-      border: 1px solid color-mix(in oklab, rgb(var(--fg)) 12%, transparent);
-      padding: 10px 12px; border-radius: 14px; box-shadow: var(--shadow);
+
+    tbody tr:last-child td {
+      border-bottom: none;
     }
-    @media (prefers-color-scheme: dark) {
-      .input-shell { background: rgba(255,255,255,.06); }
+
+    .key {
+      font-weight: 620;
+      letter-spacing: -0.01em;
     }
-    .input-shell:focus-within { outline: 3px solid color-mix(in oklab, rgb(var(--accent)) 25%, transparent); }
-    .input-shell svg { flex: none; width: 18px; height: 18px; opacity: .7; }
-    #q {
-      flex: 1; border: 0; outline: 0; background: transparent; font-size: 16px; padding: 6px 2px;
+
+    .value {
+      color: var(--fg-dim);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+    }
+
+    .controls {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .linkbtn,
+    .infobtn {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.04));
+      color: var(--fg);
+      padding: 6px 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 13px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    .linkbtn:hover,
+    .infobtn:hover {
+      border-color: color-mix(in srgb, var(--accent) 50%, var(--border));
+    }
+
+    .linkbtn:focus-visible,
+    .infobtn:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .linkbtn .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+    }
+
+    mark {
+      background: color-mix(in srgb, var(--accent) 25%, transparent);
       color: inherit;
+      padding: 0 2px;
+      border-radius: 4px;
     }
 
-    .results { margin-top: 18px; }
-    .table { width: 100%; border-collapse: collapse; }
-    .thead { position: sticky; top: 74px; z-index: 5; }
-    .thead th { text-align:left; font-size: 12px; font-weight: 600; color: rgb(var(--muted)); padding: 10px 8px; letter-spacing: .3px; }
-    .tbody tr { background: rgba(255,255,255,.5); }
-    @media (prefers-color-scheme: dark) { .tbody tr { background: rgba(255,255,255,.04); } }
-    .tbody tr + tr { border-top: 1px solid color-mix(in oklab, rgb(var(--fg)) 12%, transparent); }
-    td { padding: 12px 8px; vertical-align: middle; }
-    td.key { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; }
-    td.value { font-weight: 600; }
+    .badge {
+      font-size: 11px;
+      padding: 2px 6px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--fg-dim);
+    }
 
-    .muted { color: rgb(var(--muted)); font-size: 12px; }
-    .hint { margin-top: 8px; }
-    .pill { display:inline-flex; align-items:center; gap:8px; font-size: 12px; padding: 6px 10px; border-radius: 999px; background: rgba(145,130,255,.12); border: 1px solid color-mix(in oklab, rgb(var(--accent)) 35%, transparent); }
-
-    .btn-ghost { display:inline-grid; place-items:center; width: 34px; height: 34px; border-radius: 10px; border: 1px solid color-mix(in oklab, rgb(var(--fg)) 12%, transparent); background: rgba(255,255,255,.55); cursor: pointer; }
-    @media (prefers-color-scheme: dark) { .btn-ghost { background: rgba(255,255,255,.06); } }
-    .btn-ghost:hover { transform: translateY(-1px); }
+    .score {
+      min-width: 60px;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      color: var(--fg-dim);
+    }
 
     /* Tooltip */
-    .tooltip { position: relative; }
-    .tooltip [data-tip]::after {
-      content: attr(data-tip);
-      position: absolute; z-index: 20; inset-inline-start: 50%; transform: translateX(-50%);
-      bottom: calc(100% + 10px); min-width: 220px; max-width: min(520px, 70vw);
-      background: rgb(var(--card)); color: rgb(var(--fg));
-      border: 1px solid color-mix(in oklab, rgb(var(--fg)) 12%, transparent); border-radius: 12px;
-      padding: 10px 12px; box-shadow: var(--shadow); font-size: 13px; line-height: 1.25;
-      opacity: 0; pointer-events: none; transition: opacity .15s ease, transform .15s ease; transform-origin: bottom center; scale: .98;
-      white-space: normal;
+    .tooltip {
+      position: relative;
     }
-    .tooltip:hover [data-tip]::after, .tooltip[data-open="true"] [data-tip]::after { opacity: 1; scale: 1; }
 
-    /* Link chip */
-    .link-chip { display:inline-flex; align-items:center; gap:8px; padding: 6px 10px; border-radius: 10px; text-decoration: none; border: 1px solid color-mix(in oklab, rgb(var(--fg)) 12%, transparent); }
-    .link-chip:hover { background: rgba(255,255,255,.5); }
-    @media (prefers-color-scheme: dark) { .link-chip:hover { background: rgba(255,255,255,.06); } }
+    .tooltip[data-tip]::after {
+      content: attr(data-tip);
+      position: absolute;
+      inset: auto auto calc(100% + 8px) 0;
+      max-width: min(520px, 70vw);
+      background: var(--muted-bg);
+      color: var(--fg);
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      border-radius: 10px;
+      opacity: 0;
+      transform: translateY(6px);
+      pointer-events: none;
+      transition: .15s;
+      box-shadow: var(--shadow);
+      white-space: pre-wrap;
+      z-index: 10;
+    }
 
-    mark { background: color-mix(in oklab, rgb(var(--accent)) 25%, transparent); padding: 0 2px; border-radius: 2px; }
-    .no-results { margin-top: 16px; }
-    .footer { margin-top: 40px; font-size: 12px; color: rgb(var(--muted)); display:flex; gap:10px; align-items:center; }
-    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; border:1px solid color-mix(in oklab, rgb(var(--fg)) 12%, transparent); border-bottom-width: 2px; padding: 2px 6px; border-radius: 6px; }
+    .tooltip:hover::after,
+    .tooltip:focus-within::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .empty {
+      margin-top: 18px;
+      color: var(--fg-dim);
+      text-align: center;
+    }
+
+    .meta {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin: 12px 2px 8px;
+      color: var(--fg-dim);
+      font-size: 12px;
+    }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <header>
-      <div class="logo" aria-hidden="true">
-        <!-- simple zk swirl -->
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M3 12a9 9 0 1 0 9-9"/>
-          <path d="M3 12h9V3"/>
+      <h1>zksync-wtf <span class="tag">instant lookup</span></h1>
+      <div class="searchbar" role="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor"
+            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16a6.471 6.471 0 0 0 4.23-1.57l.27.28v.79l5 5 1.5-1.5-5-5zM4 9.5C4 6.46 6.46 4 9.5 4S15 6.46 15 9.5 12.54 15 9.5 15 4 12.54 4 9.5z" />
         </svg>
+        <input id="q" type="text" placeholder="Search by key or value — try: 0xffb1… or ‘leaf hash’" aria-label="Search"
+          autofocus />
+        <span class="kbd" title="Press slash to focus">/</span>
       </div>
-      <div>
-        <h1>zksync‑wtf</h1>
-        <div class="sub">Type to instantly look up addresses, hashes, opcodes, terms… from a tiny JSON.</div>
-      </div>
+      <div class="hint">Type multiple words — search is fuzzy and incremental. Exact/prefix hits rank highest; typos are
+        tolerated.</div>
     </header>
 
-    <div class="search" role="search">
-      <div class="input-shell" aria-label="Search input">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-3.5-3.5"/></svg>
-        <input id="q" type="text" inputmode="search" placeholder="Search by key or value… (try: tx, 0xabc, nonce, 0xdead…)" autocomplete="off" spellcheck="false" aria-controls="results" />
-        <span class="pill muted" id="count">0 items</span>
-      </div>
-      <div class="hint muted">Pro tip: press <span class="kbd">/</span> to focus search. Paste a hash, acronym, or term.</div>
-    </div>
+    <div class="meta"><span id="count"></span><span id="source"></span></div>
 
-    <section class="results" id="results" aria-live="polite"></section>
+    <table role="table" aria-label="Search results">
+      <thead>
+        <tr>
+          <th style="width: 28%">Key</th>
+          <th>Value</th>
+          <th style="width: 120px">Info</th>
+          <th style="width: 88px; text-align:right">Score</th>
+          <th style="width: 100px">Open</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
 
-    <div class="footer">
-      <span>Data loads from JSON at page start. Provide <span class="kbd">?data=&lt;url&gt;</span> to override.</span>
-    </div>
+    <div class="empty" id="empty" hidden>Start typing to see results…</div>
   </div>
 
-  <!-- Embedded fallback JSON (small sample). Replace later or pass ?data=URL. -->
-  <script type="application/json" id="seed-json">[
-    {"key":"tx","value":"Ethereum transaction","description":"A signed instruction sent to the Ethereum network to update state.","url":"https://ethereum.org/en/developers/docs/transactions/"},
-    {"key":"0x0000000000000000000000000000000000000000","value":"Zero address","description":"The burn/zero address used for minting or indicating 'no address'.","url":"https://ethereum.stackexchange.com/questions/851/"},
-    {"key":"nonce","value":"Account nonce","description":"Number of transactions sent from an address (prevents replay).","url":"https://eips.ethereum.org/EIPS/eip-155"},
-    {"key":"calldata","value":"Function call bytes","description":"Encoded function selector and args sent with a contract call.","url":"https://docs.soliditylang.org/en/latest/abi-spec.html"},
-    {"key":"zksync","value":"ZK rollup network","description":"A rollup using zero-knowledge proofs to scale Ethereum.","url":"https://docs.zksync.io/"}
-  ]</script>
-
-  <template id="table-tpl">
-    <table class="table" role="table" aria-label="Search results">
-      <thead class="thead"><tr>
-        <th style="width:42%">Key</th>
-        <th style="width:32%">Value</th>
-        <th style="width:26%">Actions</th>
-      </tr></thead>
-      <tbody class="tbody"></tbody>
-    </table>
-  </template>
-
   <script>
-  ;(() => {
-    const $ = sel => document.querySelector(sel);
-    const $$ = sel => Array.from(document.querySelectorAll(sel));
+    // ---- Data loading (embedded sample + ?data=URL support) -----------------
+    const EMBED = {
+      items: [
+        {
+          key: "0.24.0.leaf", value: "0xffb19d007c67b9000b40b372e7a7a55a47d11c92588515598d6cad4052c75ebb",
+          description: "Boojum Hash for 0.24.0.leaf version 0.24.0 in zksync-era",
+          url: "https://github.com/matter-labs/zksync-era/blob/main/prover/data/historical_data/0.24.0/commitments.json"
+        },
+        { key: "airbender:verifier params", value: "0x1234abcd…", description: "Verifier params hex in zksync-airbender", url: "https://github.com/matter-labs/zksync-airbender/" },
+        { key: "bridgehub chain", value: "324", description: "ZKsync Era chain id", url: "https://chainlist.org/chain/324" }
+      ]
+    };
 
-    /** Load JSON from ?data=URL, otherwise from embedded <script id="seed-json"> */
+    const qs = new URLSearchParams(location.search);
+    const dataURL = qs.get("data");
+
+    let DATA = EMBED.items;
+
     async function loadData() {
-      const params = new URLSearchParams(location.search);
-      const external = params.get('data');
-      let items = [];
-      try {
-        if (external) {
-          const res = await fetch(external, { cache: 'no-store' });
-          if (!res.ok) throw new Error('Failed to fetch: ' + res.status);
-          items = await res.json();
-        } else {
-          const raw = $('#seed-json')?.textContent?.trim() || '[]';
-          items = JSON.parse(raw);
-        }
-      } catch (e) {
-        console.error('JSON load error', e);
-        items = [];
-      }
-      // normalize + index
-      return items.map((r, i) => ({
-        id: i,
-        key: String(r.key ?? ''),
-        value: String(r.value ?? ''),
-        description: String(r.description ?? r.long ?? ''),
-        url: r.url ?? r.link ?? null,
-        key_lc: String(r.key ?? '').toLowerCase(),
-        value_lc: String(r.value ?? '').toLowerCase(),
-      }));
-    }
-
-    /** Simple ranking: exact > startsWith > substring; key beats value; then shorter index */
-    function scoreRecord(rec, qlc) {
-      if (!qlc) return 9999;
-      const k = rec.key_lc, v = rec.value_lc;
-      if (k === qlc) return 0;
-      if (v === qlc) return 1;
-      if (k.startsWith(qlc)) return 2;
-      if (v.startsWith(qlc)) return 3;
-      if (k.includes(qlc)) return 4 + k.indexOf(qlc)/1000;
-      if (v.includes(qlc)) return 5 + v.indexOf(qlc)/1000;
-      return 999;
-    }
-
-    /** Highlight simple substring matches (case-insensitive) */
-    function hi(text, q) {
-      if (!q) return escapeHtml(text);
-      const rx = new RegExp('(' + escapeRegExp(q) + ')', 'ig');
-      return escapeHtml(text).replace(rx, '<mark>$1</mark>');
-    }
-
-    function escapeHtml(s){ return s.replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c])); }
-    function escapeRegExp(s){ return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
-
-    function renderTable(container, rows, q) {
-      container.innerHTML = '';
-      if (!rows.length) {
-        container.innerHTML = `<div class="no-results muted">No results. Try another term.</div>`;
+      if (!dataURL) {
+        document.getElementById('source').textContent = "source: embedded sample";
         return;
       }
-      const tpl = document.getElementById('table-tpl');
-      const table = tpl.content.cloneNode(true);
-      const tbody = table.querySelector('.tbody');
+      try {
+        const r = await fetch(dataURL, { cache: "no-store" });
+        const json = await r.json();
+        // Accept either {items:[...]} or [...] shape.
+        DATA = Array.isArray(json) ? json : (json.items || json);
+        document.getElementById('source').textContent = "source: " + new URL(dataURL, location.href).hostname;
+      } catch (e) {
+        console.error("Failed to load data:", e);
+        document.getElementById('source').textContent = "source: error loading data";
+      }
+    }
 
-      for (const r of rows) {
+    // ---- Fuzzy search utilities (word-wise, incremental) -------------------
+    const isHexish = s => /^0x[0-9a-f]+$/i.test(s.trim());
+    const norm = s => s.toLowerCase();
+    const tokenize = s => norm(s).split(/[^a-z0-9]+/i).filter(Boolean);
+
+    // Cheap subsequence check: returns density (0..1) or -1 if not subsequence.
+    function subseqScore(q, t) {
+      let qi = 0, ti = 0;
+      while (qi < q.length && ti < t.length) {
+        if (q[qi] === t[ti]) qi++;
+        ti++;
+      }
+      if (qi < q.length) return -1;
+      // Higher if packed tightly
+      const span = ti;
+      return Math.max(0.3, Math.min(1, q.length / span));
+    }
+
+    // Levenshtein distance (bounded): bail early if exceeding maxD.
+    function editDistanceBound(a, b, maxD) {
+      const la = a.length, lb = b.length;
+      if (Math.abs(la - lb) > maxD) return maxD + 1;
+      const dp = Array(lb + 1);
+      for (let j = 0; j <= lb; j++) dp[j] = j;
+      for (let i = 1; i <= la; i++) {
+        let prev = dp[0]; // value from dp[i-1][j-1]
+        dp[0] = i;
+        let minRow = dp[0];
+        for (let j = 1; j <= lb; j++) {
+          const temp = dp[j];
+          const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+          dp[j] = Math.min(
+            dp[j] + 1,    // deletion
+            dp[j - 1] + 1,// insertion
+            prev + cost   // substitution
+          );
+          prev = temp;
+          if (dp[j] < minRow) minRow = dp[j];
+        }
+        if (minRow > maxD) return maxD + 1; // early exit
+      }
+      return dp[lb];
+    }
+
+    // Score a single query token against a field string.
+    // Returns {score, type, range:[start,end]} or null if no reasonable match.
+    function scoreTokenAgainst(field, q) {
+      const f = norm(field), qq = norm(q);
+      if (!qq) return null;
+
+      // Strong tiers
+      if (f === qq) return { score: 100, type: "exact", range: [0, f.length] };
+
+      // Word-token level checks
+      const words = tokenize(field);
+      // Prefix / word starts-with
+      for (const w of words) {
+        if (w.startsWith(qq)) {
+          const i = f.indexOf(qq);
+          return { score: 95 - Math.max(0, w.length - qq.length) * 0.5, type: "prefix", range: [i, i + qq.length] };
+        }
+      }
+      // Substring anywhere
+      const idx = f.indexOf(qq);
+      if (idx !== -1) {
+        return { score: 86 - Math.min(20, idx) * 0.3, type: "substr", range: [idx, idx + qq.length] };
+      }
+
+      // Subsequence (good for spaced hex, names)
+      const sub = subseqScore(qq, f);
+      if (sub >= 0) {
+        return { score: 72 * sub, type: "subseq", range: null };
+      }
+
+      // Fuzzy edit distance against each word token (bounded by length)
+      const maxD = qq.length >= 7 ? 2 : (qq.length >= 4 ? 1 : 0);
+      if (maxD > 0) {
+        let best = null;
+        for (const w of words.length ? words : [f]) {
+          const d = editDistanceBound(qq, w, maxD);
+          if (d <= maxD) {
+            const s = 68 - d * 8 + Math.min(10, Math.abs(w.length - qq.length) * -0.5);
+            if (!best || s > best.score) {
+              best = { score: s, type: "fuzzy", range: null };
+            }
+          }
+        }
+        if (best) return best;
+      }
+      return null;
+    }
+
+    // Aggregate score for an item across all query tokens.
+    // Each token can match either key OR value; item must satisfy all tokens.
+    function scoreItem(item, tokens) {
+      if (!tokens.length) return null;
+      let total = 0;
+      let matchMeta = []; // per-token info for highlighting
+      for (const t of tokens) {
+        const ks = scoreTokenAgainst(item.key, t);
+        const vs = scoreTokenAgainst(item.value ?? "", t);
+        if (!ks && !vs) return null; // AND logic: must satisfy each token
+        // Prefer the better of key/value; slight bias towards key.
+        let pick, pickedField = "value";
+        if (ks && vs) {
+          const kscore = ks.score + 3; // bias key +3
+          pick = kscore >= vs.score ? { ...ks, score: kscore } : vs;
+          pickedField = kscore >= vs.score ? "key" : "value";
+        } else {
+          pick = ks ?? vs;
+          pickedField = ks ? "key" : "value";
+        }
+        total += pick.score;
+        matchMeta.push({ token: t, where: pickedField, info: pick });
+      }
+
+      // Tie-breakers: shorter value (e.g., exact address) and more exact/prefix hits
+      const exactCount = matchMeta.filter(m => m.info.type === "exact").length;
+      const strongCount = matchMeta.filter(m => m.info.type === "exact" || m.info.type === "prefix" || m.info.type === "substr").length;
+      total += exactCount * 6 + strongCount * 2;
+      return { score: total, meta: matchMeta };
+    }
+
+    // Highlight helper: mark substring ranges only (prefix/substring/exact).
+    function highlight(text, ranges) {
+      if (!ranges || !ranges.length) return escapeHtml(text);
+      ranges.sort((a, b) => a[0] - b[0]);
+      let out = "", i = 0;
+      for (const [s, e] of ranges) {
+        if (s == null || e == null || s < 0 || e <= s) continue;
+        out += escapeHtml(text.slice(i, s));
+        out += "<mark>" + escapeHtml(text.slice(s, e)) + "</mark>";
+        i = e;
+      }
+      out += escapeHtml(text.slice(i));
+      return out;
+    }
+    const esc = { "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" };
+    const escapeHtml = s => String(s).replace(/[&<>"']/g, m => esc[m]);
+
+    // ---- UI wiring ----------------------------------------------------------
+    const $q = document.getElementById('q');
+    const $rows = document.getElementById('rows');
+    const $empty = document.getElementById('empty');
+    const $count = document.getElementById('count');
+
+    function debounce(fn, ms = 80) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
+
+    function render(results, tokens) {
+      $rows.innerHTML = "";
+      if (!tokens.length) {
+        $empty.hidden = false;
+        $count.textContent = "";
+        return;
+      }
+      $empty.hidden = true;
+      const frag = document.createDocumentFragment();
+      for (const r of results) {
+        const item = r.item;
+        // Collect highlight ranges per field from strong matches
+        const keyRanges = r.details.filter(d => d.where === "key" && (d.info.type === "exact" || d.info.type === "prefix" || d.info.type === "substr"))
+          .map(d => d.info.range).filter(Boolean);
+        const valRanges = r.details.filter(d => d.where === "value" && (d.info.type === "exact" || d.info.type === "prefix" || d.info.type === "substr"))
+          .map(d => d.info.range).filter(Boolean);
+
         const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td class="key">${hi(r.key, q)}</td>
-          <td class="value">${hi(r.value, q)}</td>
-          <td>
-            <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-              <span class="tooltip">
-                <button class="btn-ghost" aria-label="More info" data-tip="${escapeHtml(r.description || 'No description')}">
-                  ${icons.info}
-                </button>
-              </span>
-              ${r.url ? `<a class="link-chip" href="${r.url}" target="_blank" rel="noopener noreferrer" aria-label="Open link">
-                ${icons.link}<span class="muted" style="font-size:12px;">Open</span>
-              </a>` : ''}
-            </div>
-          </td>`;
-        tbody.appendChild(tr);
-      }
-      container.appendChild(table);
 
-      // On mobile, allow tapping the info button to toggle tooltip pin
-      tbody.addEventListener('click', (e) => {
-        const btn = e.target.closest('.btn-ghost');
-        if (!btn) return;
-        const host = btn.closest('.tooltip');
-        const open = host.getAttribute('data-open') === 'true';
-        // close others
-        $$('.tooltip[data-open="true"]').forEach(el => el.setAttribute('data-open','false'));
-        host.setAttribute('data-open', open ? 'false' : 'true');
-      });
-      document.addEventListener('click', (e) => {
-        if (!e.target.closest('.tooltip')) $$('.tooltip[data-open="true"]').forEach(el => el.setAttribute('data-open','false'));
-      });
+        const tdKey = document.createElement('td');
+        tdKey.className = "key";
+        tdKey.innerHTML = highlight(item.key, keyRanges);
+        tr.appendChild(tdKey);
+
+        const tdVal = document.createElement('td');
+        tdVal.className = "value";
+        tdVal.innerHTML = highlight(item.value ?? "", valRanges);
+        tr.appendChild(tdVal);
+
+        const tdInfo = document.createElement('td');
+        tdInfo.className = "controls";
+        const infoBtn = document.createElement('button');
+        infoBtn.className = "infobtn tooltip";
+        infoBtn.type = "button";
+        infoBtn.setAttribute("data-tip", (item.description || "No description available").toString());
+        infoBtn.innerHTML = "Info";
+        tdInfo.appendChild(infoBtn);
+        tr.appendChild(tdInfo);
+
+        const tdScore = document.createElement('td');
+        tdScore.className = "score";
+        tdScore.textContent = Math.round(r.score).toString();
+        tr.appendChild(tdScore);
+
+        const tdOpen = document.createElement('td');
+        tdOpen.className = "controls";
+        const a = document.createElement('a');
+        a.className = "linkbtn";
+        a.href = item.url || "#";
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.innerHTML = '<span class="dot" aria-hidden="true"></span>Open';
+        tdOpen.appendChild(a);
+        tr.appendChild(tdOpen);
+
+        frag.appendChild(tr);
+      }
+      $rows.appendChild(frag);
+      $count.textContent = results.length ? `${results.length} result${results.length > 1 ? "s" : ""}` : "No results";
     }
 
-    function formatCount(n){ return new Intl.NumberFormat().format(n) + ' items'; }
+    function search(q) {
+      const raw = q.trim();
+      const tokens = raw.split(/\s+/).filter(Boolean);
+      if (!tokens.length) { render([], tokens); return; }
 
-    // main
-    let DATA = [];
-    const resultsEl = document.getElementById('results');
-    const input = document.getElementById('q');
-    const count = document.getElementById('count');
-
-    // keyboard focus shortcut
-    window.addEventListener('keydown', (e)=>{ if (e.key === '/' && document.activeElement !== input) { e.preventDefault(); input.focus(); input.select(); } });
-
-    function searchAndRender(q){
-      const qlc = q.trim().toLowerCase();
-      let rows = DATA;
-      if (qlc) {
-        rows = DATA
-          .map(r => ({ r, s: scoreRecord(r, qlc) }))
-          .filter(x => x.s < 999)
-          .sort((a,b) => a.s - b.s || a.r.key.localeCompare(b.r.key))
-          .map(x => x.r)
-          .slice(0, 200);
+      const out = [];
+      for (const item of DATA) {
+        const s = scoreItem(item, tokens);
+        if (!s) continue;
+        out.push({
+          item,
+          score: s.score,
+          details: s.meta
+        });
       }
-      renderTable(resultsEl, rows, q);
+      out.sort((a, b) => b.score - a.score
+        || (a.item.key.length - b.item.key.length) // shorter key first
+        || String(a.item.key).localeCompare(String(b.item.key))
+      );
+      render(out.slice(0, 200), tokens);
     }
 
-    // debounce input
-    let t = null;
-    input.addEventListener('input', () => {
-      clearTimeout(t);
-      t = setTimeout(() => searchAndRender(input.value), 100);
-    });
+    const onInput = debounce(() => search($q.value), 60);
 
-    // init
-    loadData().then(items => {
-      DATA = items;
-      count.textContent = formatCount(DATA.length);
-      searchAndRender('');
-    });
-
-    // icons
-    const icons = {
-      info: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01"/><path d="M11 12h1v4h1"/></svg>`,
-      link: `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L10 5"/><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L14 19"/></svg>`,
-    };
-  })();
+    // ---- Initialize ---------------------------------------------------------
+    (async function init() {
+      await loadData();
+      document.addEventListener('keydown', (e) => {
+        if (e.key === '/' && document.activeElement !== $q) {
+          e.preventDefault();
+          $q.focus();
+          $q.select();
+        }
+      });
+      $q.addEventListener('input', onInput);
+      // If URL has ?q= prefill.
+      if (qs.get("q")) {
+        $q.value = qs.get("q");
+        search($q.value);
+      } else {
+        render([], []);
+      }
+    })();
   </script>
 </body>
-</html>
 
+</html>
