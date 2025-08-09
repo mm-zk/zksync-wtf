@@ -4,7 +4,7 @@ use futures::stream::{FuturesUnordered, StreamExt};
 use once_cell::sync::Lazy;
 use regex::Regex;
 use reqwest::header::{ACCEPT, AUTHORIZATION};
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use serde_json::{json, Value};
 use std::{collections::HashMap, env, fs, path::PathBuf};
 
@@ -17,6 +17,13 @@ struct Config {
     branch: String,    // e.g. "main"
     out_path: PathBuf, // e.g. "commitments.json"
     parallel: usize,
+}
+
+#[derive(Debug, Serialize)]
+struct OutputItem {
+    value: String,
+    url: String,
+    description: String,
 }
 
 impl Default for Config {
@@ -168,7 +175,7 @@ async fn fetch_commitment_and_extract(
     client: &reqwest::Client,
     cfg: &Config,
     dir: &str,
-) -> Result<HashMap<String, String>> {
+) -> Result<HashMap<String, OutputItem>> {
     // Check directory contents for commitment.json to avoid 404s
     let list_url = format!(
         "https://api.github.com/repos/{}/{}/contents/{}/{}?ref={}",
@@ -197,6 +204,10 @@ async fn fetch_commitment_and_extract(
         "https://raw.githubusercontent.com/{}/{}/{}/{}/{}/commitments.json",
         cfg.owner, cfg.repo, cfg.branch, cfg.base_path, dir
     );
+    let user_url = format!(
+        "https://github.com/{}/{}/blob/{}/{}/{}/commitments.json",
+        cfg.owner, cfg.repo, cfg.branch, cfg.base_path, dir
+    );
     let mut req = client.get(&raw_url);
     if let Ok(token) = env::var("GITHUB_TOKEN") {
         if !token.trim().is_empty() {
@@ -211,7 +222,21 @@ async fn fetch_commitment_and_extract(
     let mut hashes = HashMap::new();
     collect_hashes(dir, &val, &mut hashes);
 
-    Ok(hashes)
+    let result = hashes
+        .into_iter()
+        .map(|(k, v)| {
+            (
+                k.clone(),
+                OutputItem {
+                    value: v,
+                    url: user_url.clone(),
+                    description: format!("Boojum Hash for {} version {} in {}", k, dir, cfg.repo),
+                },
+            )
+        })
+        .collect();
+
+    Ok(result)
 }
 
 fn collect_hashes(prefix: &str, v: &Value, out: &mut HashMap<String, String>) {

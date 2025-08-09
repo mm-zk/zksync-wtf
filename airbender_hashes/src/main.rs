@@ -61,7 +61,14 @@ struct GhContentItem {
 struct Output {
     source: String,
     fetched_at: chrono::DateTime<chrono::Utc>,
-    items: BTreeMap<String, String>,
+    items: BTreeMap<String, OutputItem>,
+}
+
+#[derive(Debug, Serialize)]
+struct OutputItem {
+    value: String,
+    url: String,
+    description: String,
 }
 
 #[tokio::main]
@@ -107,7 +114,7 @@ async fn main() -> Result<()> {
 
     // For each tag, list JSON files in subpath, then fetch & parse each
     let sem = Arc::new(Semaphore::new(cfg.parallel.max(1)));
-    let mut tag_entries: HashMap<String, String> = HashMap::new();
+    let mut tag_entries: HashMap<String, OutputItem> = HashMap::new();
 
     for tag in tags {
         let json_files = list_json_files_for_tag(&client, &cfg, &tag).await?;
@@ -128,7 +135,7 @@ async fn main() -> Result<()> {
             }));
         }
 
-        let mut entries: HashMap<String, String> = HashMap::new();
+        let mut entries: HashMap<String, OutputItem> = HashMap::new();
         while let Some(res) = tasks.next().await {
             match res? {
                 Ok(entry) => entries.extend(entry),
@@ -240,9 +247,13 @@ async fn fetch_and_extract(
     cfg: &Config,
     tag: &str,
     item: &GhContentItem,
-) -> Result<HashMap<String, String>> {
+) -> Result<HashMap<String, OutputItem>> {
     let raw_url = format!(
         "https://raw.githubusercontent.com/{}/{}/{}/{}",
+        cfg.owner, cfg.repo, tag, item.path
+    );
+    let user_url = format!(
+        "https://github.com/{}/{}/blob/{}/{}",
         cfg.owner, cfg.repo, tag, item.path
     );
     let mut req = client.get(&raw_url);
@@ -263,10 +274,30 @@ async fn fetch_and_extract(
 
     let mut result = HashMap::new();
     if let Some(bytecode) = &bytecode {
-        result.insert(format!("{}/bytecode", key), bytecode.clone());
+        result.insert(
+            format!("{}/bytecode", key),
+            OutputItem {
+                value: bytecode.clone(),
+                url: user_url.clone(),
+                description: format!(
+                    "Bytecode hash for {} for tag {} in {}",
+                    item.name, tag, cfg.repo
+                ),
+            },
+        );
     }
     if let Some(params) = &params {
-        result.insert(format!("{}/params", key), params.clone());
+        result.insert(
+            format!("{}/params", key),
+            OutputItem {
+                value: params.clone(),
+                url: user_url.clone(),
+                description: format!(
+                    "Verification params hash for {} for tag {} in {}",
+                    item.name, tag, cfg.repo
+                ),
+            },
+        );
     }
     Ok(result)
 }
